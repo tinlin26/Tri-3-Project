@@ -37,8 +37,8 @@ func player_movement(delta):
 	 
 func play_anim(movement):
 	var dir = current_dir
-	var anim = $AnimatedSprite2D
-		
+	var anim = $AnimatedSprite2D2
+	
 	if dir == "right":
 		anim.flip_h = false
 		if movement == 1:

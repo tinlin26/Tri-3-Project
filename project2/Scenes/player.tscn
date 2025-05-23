@@ -192,7 +192,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_qnkii")
 }],
 "loop": true,
-"name": &"back_walking",
+"name": &"back_walk",
 "speed": 5.0
 }, {
 "frames": [{
@@ -215,7 +215,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_3h05x")
 }],
 "loop": true,
-"name": &"front_walking",
+"name": &"front_walk",
 "speed": 5.0
 }, {
 "frames": [{
@@ -284,7 +284,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_3mt42")
 }],
 "loop": true,
-"name": &"side_walking",
+"name": &"side_walk",
 "speed": 5.0
 }]
 
@@ -295,4 +295,4 @@ script = ExtResource("1_figqd")
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_j8tt0")
-animation = &"side_walking"
+animation = &"side_walk"
