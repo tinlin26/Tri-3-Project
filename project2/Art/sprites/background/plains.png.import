@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d4mp8l00g0kx6"
-path="res://.godot/imported/plains.png-f4e077574e2f9524ffe01e756d849d9c.ctex"
+path="res://.godot/imported/plains.png-7770984c883d953149d6c5c2f7e5e510.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/sprites/tilesets/plains.png"
-dest_files=["res://.godot/imported/plains.png-f4e077574e2f9524ffe01e756d849d9c.ctex"]
+source_file="res://Art/sprites/background/plains.png"
+dest_files=["res://.godot/imported/plains.png-7770984c883d953149d6c5c2f7e5e510.ctex"]
 
 [params]
 

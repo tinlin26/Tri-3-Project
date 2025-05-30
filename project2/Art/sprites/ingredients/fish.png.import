@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ihmq4emv63k4"
-path="res://.godot/imported/wooden_door.png-1a914e3c6716c1170ba7392ae438ceba.ctex"
+uid="uid://bxhj32iuh7rkp"
+path="res://.godot/imported/fish.png-de3671bd0a8a73d5f016eb228cc9f168.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/sprites/background/walls/wooden_door.png"
-dest_files=["res://.godot/imported/wooden_door.png-1a914e3c6716c1170ba7392ae438ceba.ctex"]
+source_file="res://Art/sprites/ingredients/fish.png"
+dest_files=["res://.godot/imported/fish.png-de3671bd0a8a73d5f016eb228cc9f168.ctex"]
 
 [params]
 

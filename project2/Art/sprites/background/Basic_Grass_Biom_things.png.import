@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ihmq4emv63k4"
-path="res://.godot/imported/wooden_door.png-1a914e3c6716c1170ba7392ae438ceba.ctex"
+uid="uid://cn78gg6lmfcem"
+path="res://.godot/imported/Basic_Grass_Biom_things.png-c50d6c2c16e7ce3354bb4ea418cfa1b2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/sprites/background/walls/wooden_door.png"
-dest_files=["res://.godot/imported/wooden_door.png-1a914e3c6716c1170ba7392ae438ceba.ctex"]
+source_file="res://Art/sprites/background/Basic_Grass_Biom_things.png"
+dest_files=["res://.godot/imported/Basic_Grass_Biom_things.png-c50d6c2c16e7ce3354bb4ea418cfa1b2.ctex"]
 
 [params]
 

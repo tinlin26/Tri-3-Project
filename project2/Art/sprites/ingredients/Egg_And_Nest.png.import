@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ihmq4emv63k4"
-path="res://.godot/imported/wooden_door.png-1a914e3c6716c1170ba7392ae438ceba.ctex"
+uid="uid://dvrlu87iovfjh"
+path="res://.godot/imported/Egg_And_Nest.png-16592021727c77b27268a2bedd3ca35f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/sprites/background/walls/wooden_door.png"
-dest_files=["res://.godot/imported/wooden_door.png-1a914e3c6716c1170ba7392ae438ceba.ctex"]
+source_file="res://Art/sprites/ingredients/Egg_And_Nest.png"
+dest_files=["res://.godot/imported/Egg_And_Nest.png-16592021727c77b27268a2bedd3ca35f.ctex"]
 
 [params]
 
