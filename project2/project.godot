@@ -12,12 +12,16 @@ config_version=5
 
 config/name="Project2"
 run/main_scene="res://Scenes/world.tscn"
-config/features=PackedStringArray("4.4", "Forward Plus")
+config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://Art/icon.svg"
 
 [display]
 
-window/stretch/scale=4.0
+window/size/viewport_width=1522
+window/size/viewport_height=1048
+window/stretch/mode="viewport"
+window/stretch/aspect="keep_height"
+window/stretch/scale=2.25
 
 [rendering]
 
