@@ -1,7 +1,10 @@
-[gd_scene load_steps=40 format=3 uid="uid://drd7ui71qystu"]
+[gd_scene load_steps=41 format=3 uid="uid://drd7ui71qystu"]
 
-[ext_resource type="Script" path="res://Scripts/player.gd" id="1_figqd"]
+[ext_resource type="Script" uid="uid://dmer6vqde5gwq" path="res://Scripts/player.gd" id="1_figqd"]
 [ext_resource type="Texture2D" uid="uid://k77k5caboyao" path="res://Art/sprites/person/player.png" id="2_i3nn7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cvnsp"]
+radius = 6.08276
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4fnq0"]
 atlas = ExtResource("2_i3nn7")
@@ -292,6 +295,8 @@ animations = [{
 script = ExtResource("1_figqd")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(1, 9)
+shape = SubResource("CircleShape2D_cvnsp")
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_j8tt0")
