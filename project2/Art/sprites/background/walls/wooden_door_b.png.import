@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bevqi4sg8r3v"
-path="res://.godot/imported/wooden_door_b.png-f7dcc44f55d4b902d92043189c74186e.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://Art/sprites/background/walls/wooden_door_b.png"
-dest_files=["res://.godot/imported/wooden_door_b.png-f7dcc44f55d4b902d92043189c74186e.ctex"]
 
 [params]
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=4 uid="uid://bjwnmo4j3a8of"]
+[gd_scene load_steps=33 format=4 uid="uid://bjwnmo4j3a8of"]
 
 [ext_resource type="PackedScene" uid="uid://drd7ui71qystu" path="res://Scenes/player.tscn" id="1_k121w"]
 [ext_resource type="TileSet" uid="uid://btiru3ublc3mj" path="res://Tilesets/game_tile_set.tres" id="2_v3ylh"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://fb2y4662ra8h" path="res://Art/sprites/background/New Fruit Trees-Photoroom.png" id="5_qohc7"]
 [ext_resource type="Texture2D" uid="uid://clq7hbq3840re" path="res://Art/sprites/ingredients/farm.png" id="6_0we0h"]
 [ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="8_2np2s"]
+[ext_resource type="AudioStream" uid="uid://kog81jfmwnhj" path="res://Sound/walk-on-grass-1-291984.mp3" id="8_bvc74"]
 [ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="9_b6i61"]
 [ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="10_gabrr"]
 [ext_resource type="AudioStream" uid="uid://0kuf3anl4l5c" path="res://Sound/GodotMusic.mp3" id="11_5gwaj"]
@@ -166,6 +167,18 @@ size = Vector2(257, 64.75)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k7acu"]
 size = Vector2(205, 31)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_av1cp"]
+size = Vector2(139, 463)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qaguv"]
+size = Vector2(124, 465.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mbwwj"]
+size = Vector2(875, 124)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vdmqw"]
+size = Vector2(891, 214.5)
+
 [sub_resource type="Resource" id="Resource_o42f7"]
 script = ExtResource("10_gabrr")
 duration = 1.0
@@ -205,9 +218,13 @@ tile_set = SubResource("TileSet_tnj3f")
 y_sort_enabled = true
 position = Vector2(348, 98)
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="GameTileMap/Trees/Player"]
+[node name="Music" type="AudioStreamPlayer2D" parent="GameTileMap/Trees/Player"]
 stream = ExtResource("11_5gwaj")
 autoplay = true
+
+[node name="Walking" type="AudioStreamPlayer2D" parent="GameTileMap/Trees/Player"]
+stream = ExtResource("8_bvc74")
+volume_db = -1.487
 
 [node name="DirtPatch" type="TileMapLayer" parent="GameTileMap"]
 tile_map_data = PackedByteArray("AAAoABQAAAAFAAAAAAAoABUAAAAFAAAAAAApABQAAAAFAAAAAAApABUAAAAFAAAAAAAqABQAAAAFAAAAAAAqABUAAAAFAAAAAAArABQAAAAFAAAAAAArABUAAAAFAAAAAAAsABQAAAAFAAAAAAAsABUAAAAFAAAAAAAtABQAAAAFAAAAAAAtABUAAAAFAAAAAAAuABQAAAAFAAAAAAAuABUAAAAFAAAAAAAtABYAAAAFAAAAAAAuABYAAAAFAAAAAAAhABQAAAAFAAAAAAAhABUAAAAFAAAAAAAiABQAAAAFAAAAAAAiABUAAAAFAAAAAAAjABQAAAAFAAAAAAAjABUAAAAFAAAAAAAkABQAAAAFAAAAAAAkABUAAAAFAAAAAAAlABQAAAAFAAAAAAAlABUAAAAFAAAAAAAmABQAAAAFAAAAAAAmABUAAAAFAAAAAAAnABQAAAAFAAAAAAAnABUAAAAFAAAAAAAhABYAAAAFAAAAAAAiABYAAAAFAAAAAAAjABYAAAAFAAAAAAAfABYAAAAFAAAAAAAfABcAAAAFAAAAAAAgABYAAAAFAAAAAAAgABcAAAAFAAAAAAAhABcAAAAFAAAAAAAeABgAAAAFAAAAAAAfABgAAAAFAAAAAAAdABkAAAAFAAAAAAAeABkAAAAFAAAAAAAcABoAAAAFAAAAAAAcABkAAAAFAAAAAAAdABgAAAAFAAAAAAAbABoAAAAFAAAAAAAbABsAAAAFAAAAAAAaABwAAAAFAAAAAAAmABMAAAAFAAAAAAAnABMAAAAFAAAAAAAoABMAAAAFAAAAAAApABMAAAAFAAAAAAAqABMAAAAFAAAAAAArABMAAAAFAAAAAAAsABMAAAAFAAAAAAAtABMAAAAFAAAAAAAuABMAAAAFAAAAAAAlABMAAAAFAAAAAAA=")
@@ -340,11 +357,32 @@ shape = SubResource("RectangleShape2D_o06y3")
 position = Vector2(582.5, 216.5)
 shape = SubResource("RectangleShape2D_k7acu")
 
+[node name="WallLeft" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-135, 64.5)
+shape = SubResource("RectangleShape2D_av1cp")
+
+[node name="WallRight" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(748, 65.25)
+shape = SubResource("RectangleShape2D_qaguv")
+
+[node name="WallTop" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(307.5, -229)
+shape = SubResource("RectangleShape2D_mbwwj")
+
+[node name="WallBottom" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(327.5, 402.25)
+shape = SubResource("RectangleShape2D_vdmqw")
+
 [node name="Camera2D" type="Camera2D" parent="."]
 physics_interpolation_mode = 1
 position = Vector2(348, 98)
 zoom = Vector2(2.5, 2.5)
 process_callback = 0
+limit_left = -168
+limit_top = -115
+limit_right = 918
+limit_bottom = 570
+editor_draw_limits = true
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D"]
 process_priority = 300
@@ -363,10 +401,16 @@ follow_damping = true
 follow_damping_value = Vector2(0.02, 0.02)
 dead_zone_width = 0.15
 dead_zone_height = 0.15
+draw_limits = true
+limit_left = -168
+limit_top = -115
+limit_right = 918
+limit_bottom = 570
 
 [node name="CameraBounds" type="Area2D" parent="."]
 
 [node name="Collision" type="CollisionShape2D" parent="CameraBounds"]
+visible = false
 position = Vector2(375.5, 233.5)
 shape = SubResource("RectangleShape2D_gxjme")
 disabled = true

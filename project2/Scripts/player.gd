@@ -3,6 +3,7 @@ extends CharacterBody2D
 const speed = 100
 var current_dir = "none";
 var cut = false;
+@onready var Walking = $Walking;
 
 func _physics_process(delta):
 	player_movement(delta)
@@ -53,6 +54,8 @@ func play_anim(movement):
 		anim.flip_h = false
 		if movement == 1:
 			anim.play("side_walk")
+			if Walking.is_playing() == false:
+				Walking.play()
 		elif movement == 0:
 			anim.play("side_idle")
 		elif movement == 2:
@@ -61,6 +64,8 @@ func play_anim(movement):
 		anim.flip_h = true
 		if movement == 1:
 			anim.play("side_walk")
+			if Walking.is_playing() == false:
+				Walking.play()
 		elif movement == 0:
 			anim.play("side_idle")
 		elif movement == 2:
@@ -69,6 +74,8 @@ func play_anim(movement):
 		anim.flip_h = true
 		if movement == 1:
 			anim.play("front_walk")
+			if Walking.is_playing() == false:
+				Walking.play()
 		elif movement == 0:
 			anim.play("front_idle")
 		elif movement == 2:
@@ -77,6 +84,8 @@ func play_anim(movement):
 		anim.flip_h = true
 		if movement == 1:
 			anim.play("back_walk")
+			if Walking.is_playing() == false:
+				Walking.play()
 		elif movement == 0:
 			anim.play("back_idle")
 		elif movement == 2:
