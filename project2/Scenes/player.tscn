@@ -1,8 +1,7 @@
-[gd_scene load_steps=54 format=3 uid="uid://drd7ui71qystu"]
+[gd_scene load_steps=53 format=3 uid="uid://drd7ui71qystu"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_figqd"]
 [ext_resource type="Texture2D" uid="uid://k77k5caboyao" path="res://Art/sprites/person/player.png" id="2_i3nn7"]
-[ext_resource type="Script" path="res://Scripts/player_state_machine.gd" id="3_cuo50"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_cvnsp"]
 radius = 6.08276
@@ -400,15 +399,4 @@ shape = SubResource("CircleShape2D_cvnsp")
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_j8tt0")
-animation = &"back_cutting"
-frame = 2
-frame_progress = 0.19465
-
-[node name="StateMachine" type="Node" parent="."]
-script = ExtResource("3_cuo50")
-
-[node name="Idle" type="Node" parent="StateMachine"]
-
-[node name="Walk" type="Node" parent="StateMachine"]
-
-[node name="Cutting" type="Node" parent="StateMachine"]
+animation = &"front_cutting"
