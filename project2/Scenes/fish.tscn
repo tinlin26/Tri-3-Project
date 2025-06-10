@@ -1,16 +1,16 @@
 [gd_scene load_steps=5 format=3 uid="uid://4gau6d2wwjhw"]
 
-[ext_resource type="Texture2D" uid="uid://bxhj32iuh7rkp" path="res://Art/sprites/ingredients/fish.png" id="1_8oubt"]
+[ext_resource type="Texture2D" uid="uid://cjpkhgvlvqacs" path="res://Art/sprites/ingredients/fish_shadows (2).png" id="1_y8ehu"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_gxmtw"]
-atlas = ExtResource("1_8oubt")
-region = Rect2(0, 0, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_t7jff"]
+atlas = ExtResource("1_y8ehu")
+region = Rect2(0, 0, 16, 15)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_wukb5"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_gxmtw")
+"texture": SubResource("AtlasTexture_t7jff")
 }],
 "loop": true,
 "name": &"swim",
@@ -24,7 +24,7 @@ height = 20.0
 [node name="Fish" type="CharacterBody2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -5)
+position = Vector2(0, -6)
 rotation = -0.872665
 sprite_frames = SubResource("SpriteFrames_wukb5")
 animation = &"swim"
@@ -33,3 +33,5 @@ animation = &"swim"
 position = Vector2(0, -5)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_qn56s")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
