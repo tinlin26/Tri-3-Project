@@ -90,3 +90,6 @@ func play_anim(movement):
 			anim.play("back_idle")
 		elif movement == 2:
 			anim.play("back_cutting")
+			
+func player():
+	pass
