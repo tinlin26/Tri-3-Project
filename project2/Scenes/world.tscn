@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=4 uid="uid://bjwnmo4j3a8of"]
+[gd_scene load_steps=61 format=4 uid="uid://bjwnmo4j3a8of"]
 
 [ext_resource type="PackedScene" uid="uid://drd7ui71qystu" path="res://Scenes/player.tscn" id="1_k121w"]
 [ext_resource type="Script" uid="uid://3ppqdfmdiv37" path="res://Scenes/fruit_pick.gd" id="1_kn0ld"]
@@ -18,6 +18,9 @@
 [ext_resource type="Texture2D" uid="uid://dkte5qn6lkdi5" path="res://Art/sprites/background/InventoryPanel.png" id="16_hgpy0"]
 [ext_resource type="Script" uid="uid://c0bol44ljykpq" path="res://Scripts/InventoryPanel.gd" id="17_t2t4p"]
 [ext_resource type="Texture2D" uid="uid://df5c2hixt23j7" path="res://Art/sprites/background/Separate_Fruits_fixed.png" id="18_0pcbe"]
+[ext_resource type="Script" uid="uid://fk872s1mmtil" path="res://Scenes/apple.gd" id="19_1cojt"]
+[ext_resource type="Texture2D" uid="uid://b8yq570hiic7t" path="res://Art/icon.svg" id="20_yq1aw"]
+[ext_resource type="Script" uid="uid://bdaly8q8ujdo3" path="res://Scenes/peach.gd" id="21_yq1aw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sqwiw"]
 texture = ExtResource("3_dqsce")
@@ -277,6 +280,12 @@ region = Rect2(83, 5, 8, 7)
 [sub_resource type="AtlasTexture" id="AtlasTexture_yq1aw"]
 atlas = ExtResource("18_0pcbe")
 region = Rect2(18, 3, 11, 11)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xbk3s"]
+atlas = ExtResource("20_yq1aw")
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_i4fjy"]
+radius = 35.0143
 
 [node name="World" type="Node2D"]
 position = Vector2(0, 105)
@@ -597,6 +606,87 @@ position = Vector2(-0.965675, 30.4867)
 scale = Vector2(0.144403, 0.849991)
 texture = SubResource("AtlasTexture_hgpy0")
 
+[node name="apple" type="Node2D" parent="."]
+script = ExtResource("19_1cojt")
+
+[node name="Sprite2D" type="Sprite2D" parent="apple"]
+position = Vector2(106, 263)
+scale = Vector2(0.40039, 0.40625)
+texture = SubResource("AtlasTexture_xbk3s")
+
+[node name="pickable_area" type="Area2D" parent="apple"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="apple/pickable_area"]
+position = Vector2(106, 262)
+shape = SubResource("CircleShape2D_i4fjy")
+debug_color = Color(0.996956, 0, 0.176287, 0.42)
+
+[node name="Marker2D" type="Marker2D" parent="apple"]
+position = Vector2(106, 262)
+
+[node name="Sprite2D2" type="Sprite2D" parent="apple"]
+position = Vector2(43, 362)
+scale = Vector2(0.40039, 0.40625)
+texture = SubResource("AtlasTexture_xbk3s")
+
+[node name="pickable_area2" type="Area2D" parent="apple"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="apple/pickable_area2"]
+position = Vector2(43, 362)
+shape = SubResource("CircleShape2D_i4fjy")
+debug_color = Color(0.996956, 0, 0.176287, 0.42)
+
+[node name="Marker2D2" type="Marker2D" parent="apple"]
+position = Vector2(43, 362)
+
+[node name="peach" type="Node2D" parent="."]
+script = ExtResource("21_yq1aw")
+
+[node name="Sprite2D" type="Sprite2D" parent="peach"]
+position = Vector2(28, 438)
+scale = Vector2(0.40039, 0.40625)
+texture = SubResource("AtlasTexture_xbk3s")
+
+[node name="pickable_area" type="Area2D" parent="peach"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="peach/pickable_area"]
+position = Vector2(26, 442)
+shape = SubResource("CircleShape2D_i4fjy")
+debug_color = Color(0.996956, 0, 0.176287, 0.42)
+
+[node name="Marker2D" type="Marker2D" parent="peach"]
+position = Vector2(28, 440)
+
+[node name="Sprite2D2" type="Sprite2D" parent="peach"]
+position = Vector2(316, 389)
+scale = Vector2(0.40039, 0.40625)
+texture = SubResource("AtlasTexture_xbk3s")
+
+[node name="pickable_area2" type="Area2D" parent="peach"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="peach/pickable_area2"]
+position = Vector2(316, 389)
+shape = SubResource("CircleShape2D_i4fjy")
+debug_color = Color(0.996956, 0, 0.176287, 0.42)
+
+[node name="Marker2D2" type="Marker2D" parent="peach"]
+position = Vector2(315, 387)
+
+[node name="Sprite2D3" type="Sprite2D" parent="peach"]
+position = Vector2(300, 294)
+scale = Vector2(0.40039, 0.40625)
+texture = SubResource("AtlasTexture_xbk3s")
+
+[node name="pickable_area3" type="Area2D" parent="peach"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="peach/pickable_area3"]
+position = Vector2(300, 295)
+shape = SubResource("CircleShape2D_i4fjy")
+debug_color = Color(0.996956, 0, 0.176287, 0.42)
+
+[node name="Marker2D3" type="Marker2D" parent="peach"]
+position = Vector2(300, 293)
+
 [connection signal="body_entered" from="Grape pickable area" to="GameTileMap" method="_on_pickable_area_body_entered"]
 [connection signal="body_entered" from="Grape pickable area" to="GameTileMap/Trees/Player" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="Grape pickable area" to="GameTileMap" method="_on_pickable_area_body_exited"]
@@ -611,3 +701,19 @@ texture = SubResource("AtlasTexture_hgpy0")
 [connection signal="tree_entered" from="Lemon pickable area/CollisionShape2D4" to="GameTileMap" method="_on_collision_shape_2d_2_tree_entered"]
 [connection signal="tree_entered" from="Lemon pickable area/CollisionShape2D4" to="GameTileMap" method="_on_collision_shape_2d_4_tree_entered"]
 [connection signal="tree_exited" from="Lemon pickable area/CollisionShape2D4" to="GameTileMap" method="_on_collision_shape_2d_4_tree_exited"]
+[connection signal="body_entered" from="apple/pickable_area" to="apple" method="_on_pickable_area_body_entered"]
+[connection signal="body_exited" from="apple/pickable_area" to="apple" method="_on_pickable_area_body_exited"]
+[connection signal="body_entered" from="apple/pickable_area2" to="apple" method="_on_pickable_area_2_body_entered"]
+[connection signal="body_entered" from="apple/pickable_area2" to="apple" method="_on_pickable_area_body_entered"]
+[connection signal="body_exited" from="apple/pickable_area2" to="apple" method="_on_pickable_area_2_body_exited"]
+[connection signal="body_exited" from="apple/pickable_area2" to="apple" method="_on_pickable_area_body_exited"]
+[connection signal="body_entered" from="peach/pickable_area" to="peach" method="_on_pickable_area_body_entered"]
+[connection signal="body_exited" from="peach/pickable_area" to="peach" method="_on_pickable_area_body_exited"]
+[connection signal="body_entered" from="peach/pickable_area2" to="peach" method="_on_pickable_area_2_body_entered"]
+[connection signal="body_entered" from="peach/pickable_area2" to="peach" method="_on_pickable_area_body_entered"]
+[connection signal="body_exited" from="peach/pickable_area2" to="peach" method="_on_pickable_area_2_body_exited"]
+[connection signal="body_exited" from="peach/pickable_area2" to="peach" method="_on_pickable_area_body_exited"]
+[connection signal="body_entered" from="peach/pickable_area3" to="peach" method="_on_pickable_area_2_body_entered"]
+[connection signal="body_entered" from="peach/pickable_area3" to="peach" method="_on_pickable_area_body_entered"]
+[connection signal="body_exited" from="peach/pickable_area3" to="peach" method="_on_pickable_area_2_body_exited"]
+[connection signal="body_exited" from="peach/pickable_area3" to="peach" method="_on_pickable_area_body_exited"]
