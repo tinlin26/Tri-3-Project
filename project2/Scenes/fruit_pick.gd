@@ -21,17 +21,17 @@ func _process(delta):
 
 #func _on_collision_shape_2d_2_tree_entered() -> void:
 	#lemonCount += 1
-	#print("Lemons:" + lemonCount)
+	#print(lemonCount)
 #
 #func _on_collision_shape_2d_3_tree_entered() -> void:
 	#lemonCount += 1
-	#print("Lemons:" + lemonCount) # Replace with function body.
+	#print(lemonCount) # Replace with function body.
 #
 #func _on_collision_shape_2d_4_tree_entered() -> void:
 	#lemonCount += 1
-	#print("Lemons:" + lemonCount) # Replace with function body.
+	#print(lemonCount) # Replace with function body.
 
 
 func _on_lemon_pickable_area_tree_entered() -> void:
 	lemonCount += 1
-	print("Lemons: " + lemonCount) # Replace with function body.
+	print(lemonCount) # Replace with function body.
