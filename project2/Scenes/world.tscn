@@ -515,8 +515,8 @@ disabled = true
 script = ExtResource("16_i4fjy")
 
 [node name="InventoryPanel" type="Sprite2D" parent="CanvasLayer"]
-position = Vector2(276.5, 264.875)
-scale = Vector2(6.73079, 1.08654)
+position = Vector2(257.5, 254)
+scale = Vector2(9.96154, 1.92308)
 texture = SubResource("AtlasTexture_t2t4p")
 script = ExtResource("17_t2t4p")
 
@@ -531,10 +531,10 @@ scale = Vector2(1.51598, 1.69351)
 texture = SubResource("AtlasTexture_axeuq")
 
 [node name="LemonCountLabel" type="Label" parent="CanvasLayer/InventoryPanel/InventoryBoxes4/Lemon"]
-offset_left = -5.36352
-offset_top = -9.73618
-offset_right = 6.63648
-offset_bottom = 13.2638
+offset_left = -4.96368
+offset_top = -7.62337
+offset_right = 7.03632
+offset_bottom = 15.3766
 
 [node name="InventoryBoxes5" type="Sprite2D" parent="CanvasLayer/InventoryPanel"]
 position = Vector2(1.86719, 0.481339)
@@ -547,10 +547,10 @@ scale = Vector2(1.54683, 1.66352)
 texture = SubResource("AtlasTexture_0pcbe")
 
 [node name="StrawberryCountLabel" type="Label" parent="CanvasLayer/InventoryPanel/InventoryBoxes5/Strawberry"]
-offset_left = -4.15384
-offset_top = -8.66171
-offset_right = 5.84616
-offset_bottom = 14.3383
+offset_left = -4.67774
+offset_top = -1.3859
+offset_right = 5.32226
+offset_bottom = 21.6141
 
 [node name="InventoryBoxes2" type="Sprite2D" parent="CanvasLayer/InventoryPanel"]
 position = Vector2(-5.45156, 30.4867)
@@ -568,10 +568,16 @@ scale = Vector2(1.31092, 1.27226)
 texture = SubResource("AtlasTexture_1cojt")
 
 [node name="PeachCountLabel" type="Label" parent="CanvasLayer/InventoryPanel/InventoryBoxes6/Peach"]
-offset_left = -6.17015
-offset_top = -6.74444
-offset_right = 5.82985
-offset_bottom = 16.2556
+anchors_preset = -1
+anchor_left = 0.00349885
+anchor_top = 0.0565671
+anchor_right = 0.253499
+anchor_bottom = 0.0565671
+offset_left = -7.86594
+offset_top = -0.360922
+offset_right = 4.13406
+offset_bottom = 22.6391
+metadata/_edit_use_anchors_ = true
 
 [node name="InventoryBoxes7" type="Sprite2D" parent="CanvasLayer/InventoryPanel"]
 position = Vector2(5.78116, 0.481342)
@@ -584,10 +590,10 @@ scale = Vector2(1.17081, 1.12635)
 texture = SubResource("AtlasTexture_pyn1s")
 
 [node name="BlackberryCountLabel" type="Label" parent="CanvasLayer/InventoryPanel/InventoryBoxes7/Blackberry"]
-offset_left = -6.64287
-offset_top = -8.40002
-offset_right = 7.35713
-offset_bottom = 14.6
+offset_left = -5.55397
+offset_top = 1.4976
+offset_right = 8.44603
+offset_bottom = 24.4976
 
 [node name="InventoryBoxes8" type="Sprite2D" parent="CanvasLayer/InventoryPanel"]
 position = Vector2(9.69513, 0.481323)
@@ -601,10 +607,10 @@ scale = Vector2(1.58518, 1.76143)
 texture = SubResource("AtlasTexture_no8kt")
 
 [node name="BlueberryCountLabel" type="Label" parent="CanvasLayer/InventoryPanel/InventoryBoxes8/Blueberry"]
-offset_left = -3.91222
-offset_top = -10.12
-offset_right = 6.08778
-offset_bottom = 12.88
+offset_left = -3.71824
+offset_top = -5.61064
+offset_right = 6.28176
+offset_bottom = 17.3894
 
 [node name="InventoryBoxes" type="Sprite2D" parent="CanvasLayer/InventoryPanel"]
 position = Vector2(-5.68117, 0.481331)
@@ -617,10 +623,11 @@ scale = Vector2(1.34437, 1.32707)
 texture = SubResource("AtlasTexture_yq1aw")
 
 [node name="AppleCountLabel" type="Label" parent="CanvasLayer/InventoryPanel/InventoryBoxes/Apple"]
-offset_left = -4.74358
-offset_top = -10.6124
-offset_right = 6.25642
-offset_bottom = 12.3876
+offset_left = -3.483
+offset_top = -5.28171
+offset_right = 7.517
+offset_bottom = 17.7183
+metadata/_edit_use_anchors_ = true
 
 [node name="InventoryBoxes3" type="Sprite2D" parent="CanvasLayer/InventoryPanel"]
 position = Vector2(-0.965675, 30.4867)
