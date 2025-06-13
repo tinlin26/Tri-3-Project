@@ -544,8 +544,8 @@ scale = Vector2(0.138737, 0.83036)
 texture = SubResource("AtlasTexture_hgpy0")
 
 [node name="Strawberry" type="Sprite2D" parent="CanvasLayer/InventoryPanel/InventoryBoxes5"]
-position = Vector2(0.065052, -4.94581)
-scale = Vector2(1.09501, 1.09153)
+position = Vector2(-0.0724373, -0.892802)
+scale = Vector2(1.92952, 1.95698)
 texture = SubResource("AtlasTexture_0pcbe")
 
 [node name="StrawberryCountLabel" type="Label" parent="CanvasLayer/InventoryPanel/InventoryBoxes5/Strawberry"]
@@ -565,8 +565,8 @@ scale = Vector2(0.146944, 0.858073)
 texture = SubResource("AtlasTexture_hgpy0")
 
 [node name="Peach" type="Sprite2D" parent="CanvasLayer/InventoryPanel/InventoryBoxes6"]
-position = Vector2(0.116079, -3.591)
-scale = Vector2(1.08244, 1.02177)
+position = Vector2(-0.225485, -0.560933)
+scale = Vector2(2.13487, 1.43238)
 texture = SubResource("AtlasTexture_1cojt")
 
 [node name="PeachCountLabel" type="Label" parent="CanvasLayer/InventoryPanel/InventoryBoxes6/Peach"]
@@ -587,8 +587,8 @@ scale = Vector2(0.148045, 0.851155)
 texture = SubResource("AtlasTexture_hgpy0")
 
 [node name="Blackberry" type="Sprite2D" parent="CanvasLayer/InventoryPanel/InventoryBoxes7"]
-position = Vector2(0.55648, -5.09346)
-scale = Vector2(0.917677, 0.754655)
+position = Vector2(0.956589, -0.816919)
+scale = Vector2(1.58218, 1.26377)
 texture = SubResource("AtlasTexture_pyn1s")
 
 [node name="BlackberryCountLabel" type="Label" parent="CanvasLayer/InventoryPanel/InventoryBoxes7/Blackberry"]
@@ -603,9 +603,9 @@ scale = Vector2(-0.143743, -0.877724)
 texture = SubResource("AtlasTexture_hgpy0")
 
 [node name="Blueberry" type="Sprite2D" parent="CanvasLayer/InventoryPanel/InventoryBoxes8"]
-position = Vector2(-0.643595, 5.28792)
+position = Vector2(0.092926, 0.141953)
 rotation = -3.14159
-scale = Vector2(1.21496, 1.33724)
+scale = Vector2(1.92287, 1.96117)
 texture = SubResource("AtlasTexture_no8kt")
 
 [node name="BlueberryCountLabel" type="Label" parent="CanvasLayer/InventoryPanel/InventoryBoxes8/Blueberry"]
@@ -620,8 +620,8 @@ scale = Vector2(0.139785, 0.849555)
 texture = SubResource("AtlasTexture_hgpy0")
 
 [node name="Apple" type="Sprite2D" parent="CanvasLayer/InventoryPanel/InventoryBoxes"]
-position = Vector2(0.14742, -3.77185)
-scale = Vector2(1.02994, 0.91664)
+position = Vector2(-0.292142, -0.711423)
+scale = Vector2(1.63215, 1.47308)
 texture = SubResource("AtlasTexture_yq1aw")
 
 [node name="AppleCountLabel" type="Label" parent="CanvasLayer/InventoryPanel/InventoryBoxes/Apple"]
@@ -806,48 +806,48 @@ position = Vector2(394, 420)
 
 [connection signal="body_entered" from="apple/pickable_area" to="apple" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="apple/pickable_area" to="apple" method="_on_pickable_area_body_exited"]
-[connection signal="body_entered" from="apple/pickable_area2" to="apple" method="_on_pickable_area_2_body_entered"]
 [connection signal="body_entered" from="apple/pickable_area2" to="apple" method="_on_pickable_area_body_entered"]
+[connection signal="body_entered" from="apple/pickable_area2" to="apple" method="_on_pickable_area_2_body_entered"]
 [connection signal="body_exited" from="apple/pickable_area2" to="apple" method="_on_pickable_area_body_exited"]
 [connection signal="body_exited" from="apple/pickable_area2" to="apple" method="_on_pickable_area_2_body_exited"]
-[connection signal="body_entered" from="apple/pickable_area3" to="apple" method="_on_pickable_area_2_body_entered"]
 [connection signal="body_entered" from="apple/pickable_area3" to="apple" method="_on_pickable_area_body_entered"]
+[connection signal="body_entered" from="apple/pickable_area3" to="apple" method="_on_pickable_area_2_body_entered"]
 [connection signal="body_exited" from="apple/pickable_area3" to="apple" method="_on_pickable_area_body_exited"]
 [connection signal="body_exited" from="apple/pickable_area3" to="apple" method="_on_pickable_area_2_body_exited"]
 [connection signal="body_entered" from="peach/pickable_area" to="peach" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="peach/pickable_area" to="peach" method="_on_pickable_area_body_exited"]
-[connection signal="body_entered" from="peach/pickable_area2" to="peach" method="_on_pickable_area_2_body_entered"]
 [connection signal="body_entered" from="peach/pickable_area2" to="peach" method="_on_pickable_area_body_entered"]
+[connection signal="body_entered" from="peach/pickable_area2" to="peach" method="_on_pickable_area_2_body_entered"]
 [connection signal="body_exited" from="peach/pickable_area2" to="peach" method="_on_pickable_area_body_exited"]
 [connection signal="body_exited" from="peach/pickable_area2" to="peach" method="_on_pickable_area_2_body_exited"]
-[connection signal="body_entered" from="peach/pickable_area3" to="peach" method="_on_pickable_area_2_body_entered"]
 [connection signal="body_entered" from="peach/pickable_area3" to="peach" method="_on_pickable_area_body_entered"]
+[connection signal="body_entered" from="peach/pickable_area3" to="peach" method="_on_pickable_area_2_body_entered"]
 [connection signal="body_exited" from="peach/pickable_area3" to="peach" method="_on_pickable_area_body_exited"]
 [connection signal="body_exited" from="peach/pickable_area3" to="peach" method="_on_pickable_area_2_body_exited"]
 [connection signal="body_entered" from="lemon/pickable_area" to="lemon" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="lemon/pickable_area" to="lemon" method="_on_pickable_area_body_exited"]
-[connection signal="body_entered" from="lemon/pickable_area2" to="lemon" method="_on_pickable_area_2_body_entered"]
 [connection signal="body_entered" from="lemon/pickable_area2" to="lemon" method="_on_pickable_area_body_entered"]
+[connection signal="body_entered" from="lemon/pickable_area2" to="lemon" method="_on_pickable_area_2_body_entered"]
 [connection signal="body_exited" from="lemon/pickable_area2" to="lemon" method="_on_pickable_area_body_exited"]
 [connection signal="body_exited" from="lemon/pickable_area2" to="lemon" method="_on_pickable_area_2_body_exited"]
-[connection signal="body_entered" from="lemon/pickable_area3" to="lemon" method="_on_pickable_area_2_body_entered"]
 [connection signal="body_entered" from="lemon/pickable_area3" to="lemon" method="_on_pickable_area_body_entered"]
+[connection signal="body_entered" from="lemon/pickable_area3" to="lemon" method="_on_pickable_area_2_body_entered"]
 [connection signal="body_exited" from="lemon/pickable_area3" to="lemon" method="_on_pickable_area_body_exited"]
 [connection signal="body_exited" from="lemon/pickable_area3" to="lemon" method="_on_pickable_area_2_body_exited"]
 [connection signal="body_entered" from="strawberry/pickable_area" to="strawberry" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="strawberry/pickable_area" to="strawberry" method="_on_pickable_area_body_exited"]
-[connection signal="body_entered" from="strawberry/pickable_area2" to="strawberry" method="_on_pickable_area_2_body_entered"]
 [connection signal="body_entered" from="strawberry/pickable_area2" to="strawberry" method="_on_pickable_area_body_entered"]
+[connection signal="body_entered" from="strawberry/pickable_area2" to="strawberry" method="_on_pickable_area_2_body_entered"]
 [connection signal="body_exited" from="strawberry/pickable_area2" to="strawberry" method="_on_pickable_area_body_exited"]
 [connection signal="body_exited" from="strawberry/pickable_area2" to="strawberry" method="_on_pickable_area_2_body_exited"]
-[connection signal="body_entered" from="strawberry/pickable_area3" to="strawberry" method="_on_pickable_area_2_body_entered"]
 [connection signal="body_entered" from="strawberry/pickable_area3" to="strawberry" method="_on_pickable_area_body_entered"]
+[connection signal="body_entered" from="strawberry/pickable_area3" to="strawberry" method="_on_pickable_area_2_body_entered"]
 [connection signal="body_exited" from="strawberry/pickable_area3" to="strawberry" method="_on_pickable_area_body_exited"]
 [connection signal="body_exited" from="strawberry/pickable_area3" to="strawberry" method="_on_pickable_area_2_body_exited"]
 [connection signal="body_entered" from="blackberry/pickable_area" to="blackberry" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="blackberry/pickable_area" to="blackberry" method="_on_pickable_area_body_exited"]
-[connection signal="body_entered" from="blackberry/pickable_area2" to="blackberry" method="_on_pickable_area_2_body_entered"]
 [connection signal="body_entered" from="blackberry/pickable_area2" to="blackberry" method="_on_pickable_area_body_entered"]
+[connection signal="body_entered" from="blackberry/pickable_area2" to="blackberry" method="_on_pickable_area_2_body_entered"]
 [connection signal="body_exited" from="blackberry/pickable_area2" to="blackberry" method="_on_pickable_area_body_exited"]
 [connection signal="body_exited" from="blackberry/pickable_area2" to="blackberry" method="_on_pickable_area_2_body_exited"]
 [connection signal="body_entered" from="blueberry/pickable_area" to="blueberry" method="_on_pickable_area_body_entered"]

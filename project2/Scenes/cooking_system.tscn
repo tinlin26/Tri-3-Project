@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://ew403s7dboey"]
+
+[node name="CookingSystem" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
