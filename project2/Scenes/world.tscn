@@ -526,16 +526,17 @@ scale = Vector2(0.139103, 0.852681)
 texture = SubResource("AtlasTexture_hgpy0")
 
 [node name="Lemon" type="Sprite2D" parent="CanvasLayer/InventoryPanel/InventoryBoxes4"]
-position = Vector2(-0.0552213, -2.29043)
-scale = Vector2(1.51598, 1.69351)
+position = Vector2(0.358278, 0.0453396)
+scale = Vector2(1.68598, 1.97726)
 texture = SubResource("AtlasTexture_axeuq")
 
 [node name="LemonCountLabel" type="Label" parent="CanvasLayer/InventoryPanel/InventoryBoxes4/Lemon"]
-offset_left = -4.96368
-offset_top = -7.62337
-offset_right = 7.03632
-offset_bottom = 15.3766
-theme_override_font_sizes/font_size = 100
+offset_left = -2.99629
+offset_top = -5.86014
+offset_right = 9.00371
+offset_bottom = 17.1399
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
 
 [node name="InventoryBoxes5" type="Sprite2D" parent="CanvasLayer/InventoryPanel"]
 position = Vector2(1.86719, 0.481339)
@@ -543,8 +544,8 @@ scale = Vector2(0.138737, 0.83036)
 texture = SubResource("AtlasTexture_hgpy0")
 
 [node name="Strawberry" type="Sprite2D" parent="CanvasLayer/InventoryPanel/InventoryBoxes5"]
-position = Vector2(-0.0724638, -2.65786)
-scale = Vector2(1.54683, 1.66352)
+position = Vector2(0.065052, -4.94581)
+scale = Vector2(1.09501, 1.09153)
 texture = SubResource("AtlasTexture_0pcbe")
 
 [node name="StrawberryCountLabel" type="Label" parent="CanvasLayer/InventoryPanel/InventoryBoxes5/Strawberry"]
@@ -564,8 +565,8 @@ scale = Vector2(0.146944, 0.858073)
 texture = SubResource("AtlasTexture_hgpy0")
 
 [node name="Peach" type="Sprite2D" parent="CanvasLayer/InventoryPanel/InventoryBoxes6"]
-position = Vector2(0.14362, -1.49942)
-scale = Vector2(1.31092, 1.27226)
+position = Vector2(0.116079, -3.591)
+scale = Vector2(1.08244, 1.02177)
 texture = SubResource("AtlasTexture_1cojt")
 
 [node name="PeachCountLabel" type="Label" parent="CanvasLayer/InventoryPanel/InventoryBoxes6/Peach"]
@@ -586,8 +587,8 @@ scale = Vector2(0.148045, 0.851155)
 texture = SubResource("AtlasTexture_hgpy0")
 
 [node name="Blackberry" type="Sprite2D" parent="CanvasLayer/InventoryPanel/InventoryBoxes7"]
-position = Vector2(0.339424, -2.86329)
-scale = Vector2(1.17081, 1.12635)
+position = Vector2(0.55648, -5.09346)
+scale = Vector2(0.917677, 0.754655)
 texture = SubResource("AtlasTexture_pyn1s")
 
 [node name="BlackberryCountLabel" type="Label" parent="CanvasLayer/InventoryPanel/InventoryBoxes7/Blackberry"]
@@ -602,16 +603,16 @@ scale = Vector2(-0.143743, -0.877724)
 texture = SubResource("AtlasTexture_hgpy0")
 
 [node name="Blueberry" type="Sprite2D" parent="CanvasLayer/InventoryPanel/InventoryBoxes8"]
-position = Vector2(-0.252299, 2.51445)
+position = Vector2(-0.643595, 5.28792)
 rotation = -3.14159
-scale = Vector2(1.58518, 1.76143)
+scale = Vector2(1.21496, 1.33724)
 texture = SubResource("AtlasTexture_no8kt")
 
 [node name="BlueberryCountLabel" type="Label" parent="CanvasLayer/InventoryPanel/InventoryBoxes8/Blueberry"]
-offset_left = -3.71824
-offset_top = -5.61064
-offset_right = 6.28176
-offset_bottom = 17.3894
+offset_left = -3.71822
+offset_top = 3.47057
+offset_right = 6.28178
+offset_bottom = 26.4706
 
 [node name="InventoryBoxes" type="Sprite2D" parent="CanvasLayer/InventoryPanel"]
 position = Vector2(-5.68117, 0.481331)
@@ -619,8 +620,8 @@ scale = Vector2(0.139785, 0.849555)
 texture = SubResource("AtlasTexture_hgpy0")
 
 [node name="Apple" type="Sprite2D" parent="CanvasLayer/InventoryPanel/InventoryBoxes"]
-position = Vector2(-0.277648, -1.51448)
-scale = Vector2(1.34437, 1.32707)
+position = Vector2(0.14742, -3.77185)
+scale = Vector2(1.02994, 0.91664)
 texture = SubResource("AtlasTexture_yq1aw")
 
 [node name="AppleCountLabel" type="Label" parent="CanvasLayer/InventoryPanel/InventoryBoxes/Apple"]
