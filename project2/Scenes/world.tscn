@@ -535,6 +535,7 @@ offset_left = -4.96368
 offset_top = -7.62337
 offset_right = 7.03632
 offset_bottom = 15.3766
+theme_override_font_sizes/font_size = 100
 
 [node name="InventoryBoxes5" type="Sprite2D" parent="CanvasLayer/InventoryPanel"]
 position = Vector2(1.86719, 0.481339)
