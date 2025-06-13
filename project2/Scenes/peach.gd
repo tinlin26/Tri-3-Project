@@ -2,14 +2,19 @@ extends Node2D
 
 var player_in_area = false
 var peachCount = 0
+var inventory_canvas: Node = null
 
-func _process(delta):
-	if player_in_area:
-		if Input.is_action_just_pressed("e"):
-			peachCount+=1
-			print("Peaches: " + str(peachCount))
+func _ready():
+	# Update with your actual CanvasLayer path (copy from editor if unsure)
+	inventory_canvas = get_node("../CanvasLayer")
+
+func _process(_delta):
+	if player_in_area and Input.is_action_just_pressed("e"):
+		peachCount += 1
+		print("Peaches picked:" + str(peachCount))
 		
-
+		if inventory_canvas:
+			inventory_canvas.update_peach_count(peachCount)
 
 func _on_pickable_area_body_entered(body: Node2D) -> void:
 	if body.has_method("player"):
