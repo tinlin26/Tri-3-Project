@@ -1,4 +1,4 @@
-[gd_scene load_steps=76 format=4 uid="uid://bjwnmo4j3a8of"]
+[gd_scene load_steps=77 format=4 uid="uid://bjwnmo4j3a8of"]
 
 [ext_resource type="PackedScene" uid="uid://drd7ui71qystu" path="res://Scenes/player.tscn" id="1_k121w"]
 [ext_resource type="Script" path="res://Scenes/fruit_pick.gd" id="1_kn0ld"]
@@ -29,6 +29,7 @@
 [ext_resource type="Script" path="res://Scenes/blueberry.gd" id="24_pt3ps"]
 [ext_resource type="Script" path="res://Scenes/veggie_patches.gd" id="28_0f254"]
 [ext_resource type="Texture2D" uid="uid://ctpmedukwr33m" path="res://Art/sprites/background/an-8-bit-retro-styled-pixel-art-illustration-of-a-dirt-mound-free-png.png" id="28_uruwh"]
+[ext_resource type="Script" path="res://Scenes/lettuce_patches.gd" id="30_00yh4"]
 [ext_resource type="Texture2D" uid="uid://cjv74urpwdkid" path="res://Art/sprites/background/pixel-art-green-lettuce-head-isolated-on-transparent-background-png.png" id="30_3bjqr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sqwiw"]
@@ -943,6 +944,7 @@ shape = SubResource("CircleShape2D_qk33o")
 debug_color = Color(0.956863, 0, 0, 0.419608)
 
 [node name="Lettuce_patches" type="Node2D" parent="."]
+script = ExtResource("30_00yh4")
 
 [node name="Lettuce1" type="Sprite2D" parent="Lettuce_patches"]
 position = Vector2(555.46, 213.8)
@@ -1026,3 +1028,9 @@ debug_color = Color(0.945098, 0, 0, 0.419608)
 [connection signal="body_exited" from="Carrot_patches/Patch2Zone" to="Carrot_patches" method="_on_patch_2_zone_body_exited"]
 [connection signal="body_entered" from="Carrot_patches/Patch3Zone" to="Carrot_patches" method="_on_patch_3_zone_body_entered"]
 [connection signal="body_exited" from="Carrot_patches/Patch3Zone" to="Carrot_patches" method="_on_patch_3_zone_body_exited"]
+[connection signal="area_entered" from="Lettuce_patches/Lettuce1Zone" to="Lettuce_patches" method="_on_lettuce_1_zone_area_entered"]
+[connection signal="area_shape_exited" from="Lettuce_patches/Lettuce1Zone" to="GameTileMap" method="_on_lettuce_1_zone_area_shape_exited"]
+[connection signal="body_entered" from="Lettuce_patches/Lettuce1Zone" to="Lettuce_patches" method="_on_lettuce_1_zone_body_entered"]
+[connection signal="body_exited" from="Lettuce_patches/Lettuce1Zone" to="Lettuce_patches" method="_on_lettuce_1_zone_body_exited"]
+[connection signal="body_entered" from="Lettuce_patches/Lettuce2Zone" to="Lettuce_patches" method="_on_lettuce_2_zone_body_entered"]
+[connection signal="body_exited" from="Lettuce_patches/Lettuce2Zone" to="Lettuce_patches" method="_on_lettuce_2_zone_body_exited"]

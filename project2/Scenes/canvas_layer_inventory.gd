@@ -8,6 +8,7 @@ extends CanvasLayer
 @onready var peach_label = $InventoryPanel/InventoryBoxes6/Peach/PeachCountLabel
 @onready var pie_label = $InventoryPanel/InventoryBoxes3/Pie/PieCountLabel
 @onready var carrot_label = $InventoryPanel/InventoryBoxes3/Pie/PieCountLabel
+@onready var lettuce_label = $InventoryPanel/InventoryBoxes3/Pie/PieCountLabel
 
 var strawberry_count = 0
 var apple_count = 0
@@ -17,6 +18,7 @@ var lemon_count = 0
 var peach_count = 0
 var pie_count = 0
 var carrot_count = 0
+var lettuce_count = 0
 
 func _ready():
 	print("InventoryCanvas is ready.")
@@ -52,3 +54,7 @@ func update_pie_count(new_count: int):
 func update_carrot_count(new_count: int):
 	carrot_count = new_count
 	carrot_label.text = str(carrot_count)
+	
+func update_lettuce_count(new_count: int):
+	lettuce_count = new_count
+	lettuce_label.text = str(lettuce_count)
