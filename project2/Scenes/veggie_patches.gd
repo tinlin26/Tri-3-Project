@@ -19,11 +19,27 @@ func _process(_delta):
 		if inventory_canvas:
 			inventory_canvas.update_veggie_count(veggieCount)
 
-func _on_pickable_area_body_entered(body: Node2D) -> void:
+func _on_patch_1_zone_body_entered(body: Node2D) -> void:
+	if body.has_method("player"):
+		player_in_area = true
+
+func _on_patch_2_zone_body_entered(body: Node2D) -> void:
 	if body.has_method("player"):
 		player_in_area = true
 		
 
-func _on_pickable_area_body_exited(body: Node2D) -> void:
+func _on_patch_3_zone_body_entered(body: Node2D) -> void:
+	if body.has_method("player"):
+		player_in_area = true
+
+func _on_patch_1_zone_body_exited(body: Node2D) -> void:
+	if body.has_method("player"):
+		player_in_area = false
+		
+func _on_patch_2_zone_body_exited(body: Node2D) -> void:
+	if body.has_method("player"):
+		player_in_area = false
+
+func _on_patch_3_zone_body_exited(body: Node2D) -> void:
 	if body.has_method("player"):
 		player_in_area = false

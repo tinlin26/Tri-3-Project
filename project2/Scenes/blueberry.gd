@@ -24,13 +24,3 @@ func _on_pickable_area_body_entered(body: Node2D) -> void:
 func _on_pickable_area_body_exited(body: Node2D) -> void:
 	if body.has_method("player"):
 		player_in_area = false
-
-
-#func _on_pickable_area_2_body_entered(body: Node2D) -> void:
-	#if body.has_method("player"):
-		#player_in_area = true # Replace with function body.
-#
-#
-#func _on_pickable_area_2_body_exited(body: Node2D) -> void:
-	#if body.has_method("player"):
-		#player_in_area = false # Replace with function body.
