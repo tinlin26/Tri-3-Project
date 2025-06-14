@@ -1,32 +1,33 @@
-[gd_scene load_steps=67 format=4 uid="uid://bjwnmo4j3a8of"]
+[gd_scene load_steps=68 format=4 uid="uid://bjwnmo4j3a8of"]
 
 [ext_resource type="PackedScene" uid="uid://drd7ui71qystu" path="res://Scenes/player.tscn" id="1_k121w"]
-[ext_resource type="Script" uid="uid://3ppqdfmdiv37" path="res://Scenes/fruit_pick.gd" id="1_kn0ld"]
+[ext_resource type="Script" path="res://Scenes/fruit_pick.gd" id="1_kn0ld"]
 [ext_resource type="TileSet" uid="uid://btiru3ublc3mj" path="res://Tilesets/game_tile_set.tres" id="2_v3ylh"]
 [ext_resource type="Texture2D" uid="uid://dswlb3aoc7hpc" path="res://Art/sprites/background/Water.png" id="3_dqsce"]
 [ext_resource type="Texture2D" uid="uid://d4mp8l00g0kx6" path="res://Art/sprites/background/plains.png" id="3_khc4u"]
 [ext_resource type="Texture2D" uid="uid://cn78gg6lmfcem" path="res://Art/sprites/background/Basic_Grass_Biom_things.png" id="4_rx0cc"]
 [ext_resource type="Texture2D" uid="uid://fb2y4662ra8h" path="res://Art/sprites/background/New Fruit Trees-Photoroom.png" id="5_qohc7"]
 [ext_resource type="Texture2D" uid="uid://clq7hbq3840re" path="res://Art/sprites/ingredients/farm.png" id="6_0we0h"]
-[ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="8_2np2s"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="8_2np2s"]
 [ext_resource type="AudioStream" uid="uid://kog81jfmwnhj" path="res://Sound/walk-on-grass-1-291984.mp3" id="8_bvc74"]
-[ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="9_b6i61"]
-[ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="10_gabrr"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="9_b6i61"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="10_gabrr"]
 [ext_resource type="AudioStream" uid="uid://0kuf3anl4l5c" path="res://Sound/GodotMusic.mp3" id="11_5gwaj"]
 [ext_resource type="PackedScene" uid="uid://4gau6d2wwjhw" path="res://Scenes/fish.tscn" id="11_hg2fe"]
 [ext_resource type="Texture2D" uid="uid://423f6pfsayh4" path="res://Art/sprites/background/firepit_fixed.png" id="12_kn0ld"]
 [ext_resource type="Texture2D" uid="uid://dkte5qn6lkdi5" path="res://Art/sprites/background/InventoryPanel.png" id="16_hgpy0"]
-[ext_resource type="Script" uid="uid://rq1nao8jrail" path="res://Scenes/canvas_layer_inventory.gd" id="16_i4fjy"]
-[ext_resource type="Script" uid="uid://c0bol44ljykpq" path="res://Scripts/InventoryPanel.gd" id="17_t2t4p"]
+[ext_resource type="Script" path="res://Scenes/canvas_layer_inventory.gd" id="16_i4fjy"]
+[ext_resource type="Script" path="res://Scripts/InventoryPanel.gd" id="17_t2t4p"]
 [ext_resource type="Texture2D" uid="uid://df5c2hixt23j7" path="res://Art/sprites/background/Separate_Fruits_fixed.png" id="18_0pcbe"]
-[ext_resource type="Script" uid="uid://fk872s1mmtil" path="res://Scenes/apple.gd" id="19_1cojt"]
+[ext_resource type="Script" path="res://Scenes/apple.gd" id="19_1cojt"]
 [ext_resource type="Texture2D" uid="uid://dx0cet6l34mmk" path="res://Art/sprites/ingredients/Pie Slice.png" id="20_hmc15"]
-[ext_resource type="Script" uid="uid://blasbo7t0jvkd" path="res://Scenes/cooking.gd" id="20_pt3ps"]
-[ext_resource type="Script" uid="uid://dabxkkx62ojj6" path="res://Scenes/lemon.gd" id="21_pyn1s"]
-[ext_resource type="Script" uid="uid://bdaly8q8ujdo3" path="res://Scenes/peach.gd" id="21_yq1aw"]
-[ext_resource type="Script" uid="uid://dn1ma5lqyibvk" path="res://Scenes/strawberry.gd" id="22_xbk3s"]
-[ext_resource type="Script" uid="uid://cx16lybowrqwu" path="res://Scenes/blackberry.gd" id="23_i4fjy"]
-[ext_resource type="Script" uid="uid://bckqpkthb3q0o" path="res://Scenes/blueberry.gd" id="24_pt3ps"]
+[ext_resource type="Script" path="res://Scenes/cooking.gd" id="20_pt3ps"]
+[ext_resource type="Script" path="res://Scenes/lemon.gd" id="21_pyn1s"]
+[ext_resource type="Script" path="res://Scenes/peach.gd" id="21_yq1aw"]
+[ext_resource type="Script" path="res://Scenes/strawberry.gd" id="22_xbk3s"]
+[ext_resource type="Script" path="res://Scenes/blackberry.gd" id="23_i4fjy"]
+[ext_resource type="Script" path="res://Scenes/blueberry.gd" id="24_pt3ps"]
+[ext_resource type="Texture2D" uid="uid://ctpmedukwr33m" path="res://Art/sprites/background/an-8-bit-retro-styled-pixel-art-illustration-of-a-dirt-mound-free-png.png" id="28_uruwh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sqwiw"]
 texture = ExtResource("3_dqsce")
@@ -848,6 +849,23 @@ debug_color = Color(0.995788, 0, 0.198968, 0.42)
 position = Vector2(88, 90)
 
 [node name="cooking" type="Node2D" parent="."]
+
+[node name="Veggie_patches" type="Node2D" parent="."]
+
+[node name="Patch1" type="Sprite2D" parent="Veggie_patches"]
+position = Vector2(512, 154)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("28_uruwh")
+
+[node name="Patch2" type="Sprite2D" parent="Veggie_patches"]
+position = Vector2(619, 198)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("28_uruwh")
+
+[node name="Patch3" type="Sprite2D" parent="Veggie_patches"]
+position = Vector2(497, 254)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("28_uruwh")
 
 [connection signal="body_entered" from="apple/pickable_area" to="apple" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="apple/pickable_area" to="apple" method="_on_pickable_area_body_exited"]

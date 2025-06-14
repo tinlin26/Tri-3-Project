@@ -1,6 +1,6 @@
-[gd_scene load_steps=53 format=3 uid="uid://drd7ui71qystu"]
+[gd_scene load_steps=59 format=3 uid="uid://drd7ui71qystu"]
 
-[ext_resource type="Script" uid="uid://dmer6vqde5gwq" path="res://Scripts/player.gd" id="1_figqd"]
+[ext_resource type="Script" path="res://Scripts/player.gd" id="1_figqd"]
 [ext_resource type="Texture2D" uid="uid://k77k5caboyao" path="res://Art/sprites/person/player.png" id="2_i3nn7"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_cvnsp"]
@@ -85,6 +85,30 @@ region = Rect2(96, 288, 48, 48)
 [sub_resource type="AtlasTexture" id="AtlasTexture_54m7o"]
 atlas = ExtResource("2_i3nn7")
 region = Rect2(144, 288, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7erqq"]
+atlas = ExtResource("2_i3nn7")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_43li2"]
+atlas = ExtResource("2_i3nn7")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sxatb"]
+atlas = ExtResource("2_i3nn7")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rmg6q"]
+atlas = ExtResource("2_i3nn7")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gbnoa"]
+atlas = ExtResource("2_i3nn7")
+region = Rect2(192, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i12xv"]
+atlas = ExtResource("2_i3nn7")
+region = Rect2(240, 0, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2ake8"]
 atlas = ExtResource("2_i3nn7")
@@ -282,6 +306,29 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_7erqq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_43li2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sxatb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rmg6q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gbnoa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i12xv")
+}],
+"loop": true,
+"name": &"front_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_2ake8")
 }, {
 "duration": 1.0,
@@ -399,4 +446,5 @@ shape = SubResource("CircleShape2D_cvnsp")
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_j8tt0")
-animation = &"front_cutting"
+animation = &"front_idle"
+frame_progress = 0.304885
