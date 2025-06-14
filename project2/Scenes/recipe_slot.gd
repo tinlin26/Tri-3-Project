@@ -13,4 +13,6 @@ var recipe : Recipe:
 			%Ingredient.get_child(i).find_child("Amount").text = str(value.ingredients[key])	
 
 func _on_gui_input(event: InputEvent) -> void:
-	pass # Replace with function body.
+	if event is InputEventMouseButton and event.pressed:
+		if event.button_index == MOUSE_BUTTON_LEFT:
+			selected.emit(recipe, self)
