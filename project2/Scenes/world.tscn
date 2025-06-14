@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=4 uid="uid://bjwnmo4j3a8of"]
+[gd_scene load_steps=64 format=4 uid="uid://bjwnmo4j3a8of"]
 
 [ext_resource type="PackedScene" uid="uid://drd7ui71qystu" path="res://Scenes/player.tscn" id="1_k121w"]
 [ext_resource type="Script" uid="uid://3ppqdfmdiv37" path="res://Scenes/fruit_pick.gd" id="1_kn0ld"]
@@ -20,6 +20,7 @@
 [ext_resource type="Script" uid="uid://c0bol44ljykpq" path="res://Scripts/InventoryPanel.gd" id="17_t2t4p"]
 [ext_resource type="Texture2D" uid="uid://df5c2hixt23j7" path="res://Art/sprites/background/Separate_Fruits_fixed.png" id="18_0pcbe"]
 [ext_resource type="Script" uid="uid://fk872s1mmtil" path="res://Scenes/apple.gd" id="19_1cojt"]
+[ext_resource type="Script" uid="uid://blasbo7t0jvkd" path="res://Scenes/cooking.gd" id="20_pt3ps"]
 [ext_resource type="Script" uid="uid://dabxkkx62ojj6" path="res://Scenes/lemon.gd" id="21_pyn1s"]
 [ext_resource type="Script" uid="uid://bdaly8q8ujdo3" path="res://Scenes/peach.gd" id="21_yq1aw"]
 [ext_resource type="Script" uid="uid://dn1ma5lqyibvk" path="res://Scenes/strawberry.gd" id="22_xbk3s"]
@@ -515,7 +516,7 @@ disabled = true
 script = ExtResource("16_i4fjy")
 
 [node name="InventoryPanel" type="Sprite2D" parent="CanvasLayer"]
-position = Vector2(257.5, 254)
+position = Vector2(597, 152)
 scale = Vector2(9.96154, 1.92308)
 texture = SubResource("AtlasTexture_t2t4p")
 script = ExtResource("17_t2t4p")
@@ -635,6 +636,9 @@ metadata/_edit_use_anchors_ = true
 position = Vector2(-0.965675, 30.4867)
 scale = Vector2(0.144403, 0.849991)
 texture = SubResource("AtlasTexture_hgpy0")
+
+[node name="Cooking" type="CanvasLayer" parent="."]
+script = ExtResource("20_pt3ps")
 
 [node name="apple" type="Node2D" parent="."]
 script = ExtResource("19_1cojt")

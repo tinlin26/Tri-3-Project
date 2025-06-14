@@ -7,6 +7,7 @@ var inventory_canvas: Node = null
 func _ready():
 	# Update with your actual CanvasLayer path (copy from editor if unsure)
 	inventory_canvas = get_node("../CanvasLayer")
+	print("My path is: ", get_path())
 
 func _process(_delta):
 	if player_in_area and Input.is_action_just_pressed("e"):
