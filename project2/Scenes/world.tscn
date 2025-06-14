@@ -1,4 +1,4 @@
-[gd_scene load_steps=68 format=4 uid="uid://bjwnmo4j3a8of"]
+[gd_scene load_steps=69 format=4 uid="uid://bjwnmo4j3a8of"]
 
 [ext_resource type="PackedScene" uid="uid://drd7ui71qystu" path="res://Scenes/player.tscn" id="1_k121w"]
 [ext_resource type="Script" path="res://Scenes/fruit_pick.gd" id="1_kn0ld"]
@@ -244,6 +244,8 @@ size = Vector2(37, 15)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ys1us"]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_x22tt"]
+
 [sub_resource type="Resource" id="Resource_o42f7"]
 script = ExtResource("10_gabrr")
 duration = 1.0
@@ -479,6 +481,24 @@ shape = SubResource("RectangleShape2D_v6vo5")
 [node name="CollisionShape2D12" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(376, 291)
 shape = SubResource("RectangleShape2D_ys1us")
+
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="StaticBody2D"]
+z_index = 1
+position = Vector2(445.95, -9.29)
+scale = Vector2(1.95, 1.95)
+shape = SubResource("CircleShape2D_x22tt")
+
+[node name="CollisionShape2D20" type="CollisionShape2D" parent="StaticBody2D"]
+z_index = 1
+position = Vector2(553.11, 35)
+scale = Vector2(1.95, 1.95)
+shape = SubResource("CircleShape2D_x22tt")
+
+[node name="CollisionShape2D22" type="CollisionShape2D" parent="StaticBody2D"]
+z_index = 1
+position = Vector2(430.89, 90)
+scale = Vector2(2.41, 2.41)
+shape = SubResource("CircleShape2D_x22tt")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 physics_interpolation_mode = 1
@@ -869,50 +889,50 @@ texture = ExtResource("28_uruwh")
 
 [connection signal="body_entered" from="apple/pickable_area" to="apple" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="apple/pickable_area" to="apple" method="_on_pickable_area_body_exited"]
-[connection signal="body_entered" from="apple/pickable_area2" to="apple" method="_on_pickable_area_2_body_entered"]
 [connection signal="body_entered" from="apple/pickable_area2" to="apple" method="_on_pickable_area_body_entered"]
-[connection signal="body_exited" from="apple/pickable_area2" to="apple" method="_on_pickable_area_2_body_exited"]
+[connection signal="body_entered" from="apple/pickable_area2" to="apple" method="_on_pickable_area_2_body_entered"]
 [connection signal="body_exited" from="apple/pickable_area2" to="apple" method="_on_pickable_area_body_exited"]
-[connection signal="body_entered" from="apple/pickable_area3" to="apple" method="_on_pickable_area_2_body_entered"]
+[connection signal="body_exited" from="apple/pickable_area2" to="apple" method="_on_pickable_area_2_body_exited"]
 [connection signal="body_entered" from="apple/pickable_area3" to="apple" method="_on_pickable_area_body_entered"]
-[connection signal="body_exited" from="apple/pickable_area3" to="apple" method="_on_pickable_area_2_body_exited"]
+[connection signal="body_entered" from="apple/pickable_area3" to="apple" method="_on_pickable_area_2_body_entered"]
 [connection signal="body_exited" from="apple/pickable_area3" to="apple" method="_on_pickable_area_body_exited"]
+[connection signal="body_exited" from="apple/pickable_area3" to="apple" method="_on_pickable_area_2_body_exited"]
 [connection signal="body_entered" from="peach/pickable_area" to="peach" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="peach/pickable_area" to="peach" method="_on_pickable_area_body_exited"]
-[connection signal="body_entered" from="peach/pickable_area2" to="peach" method="_on_pickable_area_2_body_entered"]
 [connection signal="body_entered" from="peach/pickable_area2" to="peach" method="_on_pickable_area_body_entered"]
-[connection signal="body_exited" from="peach/pickable_area2" to="peach" method="_on_pickable_area_2_body_exited"]
+[connection signal="body_entered" from="peach/pickable_area2" to="peach" method="_on_pickable_area_2_body_entered"]
 [connection signal="body_exited" from="peach/pickable_area2" to="peach" method="_on_pickable_area_body_exited"]
-[connection signal="body_entered" from="peach/pickable_area3" to="peach" method="_on_pickable_area_2_body_entered"]
+[connection signal="body_exited" from="peach/pickable_area2" to="peach" method="_on_pickable_area_2_body_exited"]
 [connection signal="body_entered" from="peach/pickable_area3" to="peach" method="_on_pickable_area_body_entered"]
-[connection signal="body_exited" from="peach/pickable_area3" to="peach" method="_on_pickable_area_2_body_exited"]
+[connection signal="body_entered" from="peach/pickable_area3" to="peach" method="_on_pickable_area_2_body_entered"]
 [connection signal="body_exited" from="peach/pickable_area3" to="peach" method="_on_pickable_area_body_exited"]
+[connection signal="body_exited" from="peach/pickable_area3" to="peach" method="_on_pickable_area_2_body_exited"]
 [connection signal="body_entered" from="lemon/pickable_area" to="lemon" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="lemon/pickable_area" to="lemon" method="_on_pickable_area_body_exited"]
-[connection signal="body_entered" from="lemon/pickable_area2" to="lemon" method="_on_pickable_area_2_body_entered"]
 [connection signal="body_entered" from="lemon/pickable_area2" to="lemon" method="_on_pickable_area_body_entered"]
-[connection signal="body_exited" from="lemon/pickable_area2" to="lemon" method="_on_pickable_area_2_body_exited"]
+[connection signal="body_entered" from="lemon/pickable_area2" to="lemon" method="_on_pickable_area_2_body_entered"]
 [connection signal="body_exited" from="lemon/pickable_area2" to="lemon" method="_on_pickable_area_body_exited"]
-[connection signal="body_entered" from="lemon/pickable_area3" to="lemon" method="_on_pickable_area_2_body_entered"]
+[connection signal="body_exited" from="lemon/pickable_area2" to="lemon" method="_on_pickable_area_2_body_exited"]
 [connection signal="body_entered" from="lemon/pickable_area3" to="lemon" method="_on_pickable_area_body_entered"]
-[connection signal="body_exited" from="lemon/pickable_area3" to="lemon" method="_on_pickable_area_2_body_exited"]
+[connection signal="body_entered" from="lemon/pickable_area3" to="lemon" method="_on_pickable_area_2_body_entered"]
 [connection signal="body_exited" from="lemon/pickable_area3" to="lemon" method="_on_pickable_area_body_exited"]
+[connection signal="body_exited" from="lemon/pickable_area3" to="lemon" method="_on_pickable_area_2_body_exited"]
 [connection signal="body_entered" from="strawberry/pickable_area" to="strawberry" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="strawberry/pickable_area" to="strawberry" method="_on_pickable_area_body_exited"]
-[connection signal="body_entered" from="strawberry/pickable_area2" to="strawberry" method="_on_pickable_area_2_body_entered"]
 [connection signal="body_entered" from="strawberry/pickable_area2" to="strawberry" method="_on_pickable_area_body_entered"]
-[connection signal="body_exited" from="strawberry/pickable_area2" to="strawberry" method="_on_pickable_area_2_body_exited"]
+[connection signal="body_entered" from="strawberry/pickable_area2" to="strawberry" method="_on_pickable_area_2_body_entered"]
 [connection signal="body_exited" from="strawberry/pickable_area2" to="strawberry" method="_on_pickable_area_body_exited"]
-[connection signal="body_entered" from="strawberry/pickable_area3" to="strawberry" method="_on_pickable_area_2_body_entered"]
+[connection signal="body_exited" from="strawberry/pickable_area2" to="strawberry" method="_on_pickable_area_2_body_exited"]
 [connection signal="body_entered" from="strawberry/pickable_area3" to="strawberry" method="_on_pickable_area_body_entered"]
-[connection signal="body_exited" from="strawberry/pickable_area3" to="strawberry" method="_on_pickable_area_2_body_exited"]
+[connection signal="body_entered" from="strawberry/pickable_area3" to="strawberry" method="_on_pickable_area_2_body_entered"]
 [connection signal="body_exited" from="strawberry/pickable_area3" to="strawberry" method="_on_pickable_area_body_exited"]
+[connection signal="body_exited" from="strawberry/pickable_area3" to="strawberry" method="_on_pickable_area_2_body_exited"]
 [connection signal="body_entered" from="blackberry/pickable_area" to="blackberry" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="blackberry/pickable_area" to="blackberry" method="_on_pickable_area_body_exited"]
-[connection signal="body_entered" from="blackberry/pickable_area2" to="blackberry" method="_on_pickable_area_2_body_entered"]
 [connection signal="body_entered" from="blackberry/pickable_area2" to="blackberry" method="_on_pickable_area_body_entered"]
-[connection signal="body_exited" from="blackberry/pickable_area2" to="blackberry" method="_on_pickable_area_2_body_exited"]
+[connection signal="body_entered" from="blackberry/pickable_area2" to="blackberry" method="_on_pickable_area_2_body_entered"]
 [connection signal="body_exited" from="blackberry/pickable_area2" to="blackberry" method="_on_pickable_area_body_exited"]
+[connection signal="body_exited" from="blackberry/pickable_area2" to="blackberry" method="_on_pickable_area_2_body_exited"]
 [connection signal="body_entered" from="blueberry/pickable_area" to="blueberry" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="blueberry/pickable_area" to="blueberry" method="_on_pickable_area_body_exited"]
 [connection signal="body_entered" from="campfire/cookable_area" to="campfire" method="_on_cookable_area_body_entered"]
