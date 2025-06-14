@@ -1,4 +1,4 @@
-[gd_scene load_steps=71 format=4 uid="uid://bjwnmo4j3a8of"]
+[gd_scene load_steps=76 format=4 uid="uid://bjwnmo4j3a8of"]
 
 [ext_resource type="PackedScene" uid="uid://drd7ui71qystu" path="res://Scenes/player.tscn" id="1_k121w"]
 [ext_resource type="Script" path="res://Scenes/fruit_pick.gd" id="1_kn0ld"]
@@ -29,6 +29,7 @@
 [ext_resource type="Script" path="res://Scenes/blueberry.gd" id="24_pt3ps"]
 [ext_resource type="Script" path="res://Scenes/veggie_patches.gd" id="28_0f254"]
 [ext_resource type="Texture2D" uid="uid://ctpmedukwr33m" path="res://Art/sprites/background/an-8-bit-retro-styled-pixel-art-illustration-of-a-dirt-mound-free-png.png" id="28_uruwh"]
+[ext_resource type="Texture2D" uid="uid://cjv74urpwdkid" path="res://Art/sprites/background/pixel-art-green-lettuce-head-isolated-on-transparent-background-png.png" id="30_3bjqr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sqwiw"]
 texture = ExtResource("3_dqsce")
@@ -206,6 +207,8 @@ texture = ExtResource("12_kn0ld")
 [sub_resource type="TileSet" id="TileSet_t2t4p"]
 sources/0 = SubResource("TileSetAtlasSource_hgpy0")
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_x22tt"]
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_o06y3"]
 radius = 13.0
 
@@ -245,7 +248,9 @@ size = Vector2(37, 15)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ys1us"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_x22tt"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_2d5s1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_y6ddf"]
 
 [sub_resource type="Resource" id="Resource_o42f7"]
 script = ExtResource("10_gabrr")
@@ -299,6 +304,10 @@ radius = 25.0799
 radius = 46.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qk33o"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vyd8d"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tpbn5"]
 
 [node name="World" type="Node2D"]
 position = Vector2(0, 105)
@@ -359,6 +368,12 @@ tile_set = SubResource("TileSet_t2t4p")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(66, 167)
+
+[node name="CollisionShape2D27" type="CollisionShape2D" parent="StaticBody2D"]
+z_index = 1
+position = Vector2(1094.46, 225.882)
+scale = Vector2(2.3716, 2.3716)
+shape = SubResource("CircleShape2D_x22tt")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
 z_index = 3
@@ -502,6 +517,18 @@ z_index = 1
 position = Vector2(430.89, 88.93)
 scale = Vector2(1.54, 1.54)
 shape = SubResource("CircleShape2D_x22tt")
+
+[node name="CollisionShape2D28" type="CollisionShape2D" parent="StaticBody2D"]
+z_index = 1
+position = Vector2(536.04, -40.84)
+scale = Vector2(1.53, 1.53)
+shape = SubResource("CircleShape2D_2d5s1")
+
+[node name="CollisionShape2D29" type="CollisionShape2D" parent="StaticBody2D"]
+z_index = 1
+position = Vector2(489.55, 47.09)
+scale = Vector2(1.07, 1.07)
+shape = SubResource("CircleShape2D_y6ddf")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 physics_interpolation_mode = 1
@@ -873,101 +900,129 @@ position = Vector2(88, 90)
 
 [node name="cooking" type="Node2D" parent="."]
 
-[node name="Veggie_patches" type="Node2D" parent="."]
+[node name="Carrot_patches" type="Node2D" parent="."]
 script = ExtResource("28_0f254")
 
-[node name="Patch1" type="Sprite2D" parent="Veggie_patches"]
+[node name="Patch1" type="Sprite2D" parent="Carrot_patches"]
 position = Vector2(512, 154)
 scale = Vector2(0.05, 0.05)
 texture = ExtResource("28_uruwh")
 
-[node name="Patch2" type="Sprite2D" parent="Veggie_patches"]
+[node name="Patch2" type="Sprite2D" parent="Carrot_patches"]
 position = Vector2(619, 198)
 scale = Vector2(0.05, 0.05)
 texture = ExtResource("28_uruwh")
 
-[node name="Patch3" type="Sprite2D" parent="Veggie_patches"]
+[node name="Patch3" type="Sprite2D" parent="Carrot_patches"]
 position = Vector2(497, 254)
 scale = Vector2(0.06, 0.06)
 texture = ExtResource("28_uruwh")
 
-[node name="Patch1Zone" type="Area2D" parent="Veggie_patches"]
+[node name="Patch1Zone" type="Area2D" parent="Carrot_patches"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Veggie_patches/Patch1Zone"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Carrot_patches/Patch1Zone"]
 position = Vector2(511.79, 153.37)
 scale = Vector2(2.64, 2.64)
 shape = SubResource("CircleShape2D_qk33o")
 debug_color = Color(0.956863, 0, 0, 0.419608)
 
-[node name="Patch2Zone" type="Area2D" parent="Veggie_patches"]
+[node name="Patch2Zone" type="Area2D" parent="Carrot_patches"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Veggie_patches/Patch2Zone"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Carrot_patches/Patch2Zone"]
 position = Vector2(619, 200)
 scale = Vector2(2.64, 2.64)
 shape = SubResource("CircleShape2D_qk33o")
 debug_color = Color(0.956863, 0, 0, 0.419608)
 
-[node name="Patch3Zone" type="Area2D" parent="Veggie_patches"]
+[node name="Patch3Zone" type="Area2D" parent="Carrot_patches"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Veggie_patches/Patch3Zone"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Carrot_patches/Patch3Zone"]
 position = Vector2(497, 258)
 scale = Vector2(2.64, 2.64)
 shape = SubResource("CircleShape2D_qk33o")
 debug_color = Color(0.956863, 0, 0, 0.419608)
 
+[node name="Lettuce_patches" type="Node2D" parent="."]
+
+[node name="Lettuce1" type="Sprite2D" parent="Lettuce_patches"]
+position = Vector2(555.46, 213.8)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("30_3bjqr")
+
+[node name="Lettuce2" type="Sprite2D" parent="Lettuce_patches"]
+position = Vector2(601.918, 124.658)
+scale = Vector2(0.084, 0.084)
+texture = ExtResource("30_3bjqr")
+
+[node name="Lettuce1Zone" type="Area2D" parent="Lettuce_patches"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Lettuce_patches/Lettuce1Zone"]
+position = Vector2(602.29, 126.5)
+scale = Vector2(2.74, 2.74)
+shape = SubResource("CircleShape2D_vyd8d")
+debug_color = Color(0.976471, 0, 0, 0.419608)
+
+[node name="Lettuce2Zone" type="Area2D" parent="Lettuce_patches"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Lettuce_patches/Lettuce2Zone"]
+position = Vector2(555.32, 213.7)
+scale = Vector2(1.95, 1.95)
+shape = SubResource("CircleShape2D_tpbn5")
+debug_color = Color(0.945098, 0, 0, 0.419608)
+
 [connection signal="body_entered" from="apple/pickable_area" to="apple" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="apple/pickable_area" to="apple" method="_on_pickable_area_body_exited"]
-[connection signal="body_entered" from="apple/pickable_area2" to="apple" method="_on_pickable_area_body_entered"]
 [connection signal="body_entered" from="apple/pickable_area2" to="apple" method="_on_pickable_area_2_body_entered"]
-[connection signal="body_exited" from="apple/pickable_area2" to="apple" method="_on_pickable_area_body_exited"]
+[connection signal="body_entered" from="apple/pickable_area2" to="apple" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="apple/pickable_area2" to="apple" method="_on_pickable_area_2_body_exited"]
-[connection signal="body_entered" from="apple/pickable_area3" to="apple" method="_on_pickable_area_body_entered"]
+[connection signal="body_exited" from="apple/pickable_area2" to="apple" method="_on_pickable_area_body_exited"]
 [connection signal="body_entered" from="apple/pickable_area3" to="apple" method="_on_pickable_area_2_body_entered"]
-[connection signal="body_exited" from="apple/pickable_area3" to="apple" method="_on_pickable_area_body_exited"]
+[connection signal="body_entered" from="apple/pickable_area3" to="apple" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="apple/pickable_area3" to="apple" method="_on_pickable_area_2_body_exited"]
+[connection signal="body_exited" from="apple/pickable_area3" to="apple" method="_on_pickable_area_body_exited"]
 [connection signal="body_entered" from="peach/pickable_area" to="peach" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="peach/pickable_area" to="peach" method="_on_pickable_area_body_exited"]
-[connection signal="body_entered" from="peach/pickable_area2" to="peach" method="_on_pickable_area_body_entered"]
 [connection signal="body_entered" from="peach/pickable_area2" to="peach" method="_on_pickable_area_2_body_entered"]
-[connection signal="body_exited" from="peach/pickable_area2" to="peach" method="_on_pickable_area_body_exited"]
+[connection signal="body_entered" from="peach/pickable_area2" to="peach" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="peach/pickable_area2" to="peach" method="_on_pickable_area_2_body_exited"]
-[connection signal="body_entered" from="peach/pickable_area3" to="peach" method="_on_pickable_area_body_entered"]
+[connection signal="body_exited" from="peach/pickable_area2" to="peach" method="_on_pickable_area_body_exited"]
 [connection signal="body_entered" from="peach/pickable_area3" to="peach" method="_on_pickable_area_2_body_entered"]
-[connection signal="body_exited" from="peach/pickable_area3" to="peach" method="_on_pickable_area_body_exited"]
+[connection signal="body_entered" from="peach/pickable_area3" to="peach" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="peach/pickable_area3" to="peach" method="_on_pickable_area_2_body_exited"]
+[connection signal="body_exited" from="peach/pickable_area3" to="peach" method="_on_pickable_area_body_exited"]
 [connection signal="body_entered" from="lemon/pickable_area" to="lemon" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="lemon/pickable_area" to="lemon" method="_on_pickable_area_body_exited"]
-[connection signal="body_entered" from="lemon/pickable_area2" to="lemon" method="_on_pickable_area_body_entered"]
 [connection signal="body_entered" from="lemon/pickable_area2" to="lemon" method="_on_pickable_area_2_body_entered"]
-[connection signal="body_exited" from="lemon/pickable_area2" to="lemon" method="_on_pickable_area_body_exited"]
+[connection signal="body_entered" from="lemon/pickable_area2" to="lemon" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="lemon/pickable_area2" to="lemon" method="_on_pickable_area_2_body_exited"]
-[connection signal="body_entered" from="lemon/pickable_area3" to="lemon" method="_on_pickable_area_body_entered"]
+[connection signal="body_exited" from="lemon/pickable_area2" to="lemon" method="_on_pickable_area_body_exited"]
 [connection signal="body_entered" from="lemon/pickable_area3" to="lemon" method="_on_pickable_area_2_body_entered"]
-[connection signal="body_exited" from="lemon/pickable_area3" to="lemon" method="_on_pickable_area_body_exited"]
+[connection signal="body_entered" from="lemon/pickable_area3" to="lemon" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="lemon/pickable_area3" to="lemon" method="_on_pickable_area_2_body_exited"]
+[connection signal="body_exited" from="lemon/pickable_area3" to="lemon" method="_on_pickable_area_body_exited"]
 [connection signal="body_entered" from="strawberry/pickable_area" to="strawberry" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="strawberry/pickable_area" to="strawberry" method="_on_pickable_area_body_exited"]
-[connection signal="body_entered" from="strawberry/pickable_area2" to="strawberry" method="_on_pickable_area_body_entered"]
 [connection signal="body_entered" from="strawberry/pickable_area2" to="strawberry" method="_on_pickable_area_2_body_entered"]
-[connection signal="body_exited" from="strawberry/pickable_area2" to="strawberry" method="_on_pickable_area_body_exited"]
+[connection signal="body_entered" from="strawberry/pickable_area2" to="strawberry" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="strawberry/pickable_area2" to="strawberry" method="_on_pickable_area_2_body_exited"]
-[connection signal="body_entered" from="strawberry/pickable_area3" to="strawberry" method="_on_pickable_area_body_entered"]
+[connection signal="body_exited" from="strawberry/pickable_area2" to="strawberry" method="_on_pickable_area_body_exited"]
 [connection signal="body_entered" from="strawberry/pickable_area3" to="strawberry" method="_on_pickable_area_2_body_entered"]
-[connection signal="body_exited" from="strawberry/pickable_area3" to="strawberry" method="_on_pickable_area_body_exited"]
+[connection signal="body_entered" from="strawberry/pickable_area3" to="strawberry" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="strawberry/pickable_area3" to="strawberry" method="_on_pickable_area_2_body_exited"]
+[connection signal="body_exited" from="strawberry/pickable_area3" to="strawberry" method="_on_pickable_area_body_exited"]
 [connection signal="body_entered" from="blackberry/pickable_area" to="blackberry" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="blackberry/pickable_area" to="blackberry" method="_on_pickable_area_body_exited"]
-[connection signal="body_entered" from="blackberry/pickable_area2" to="blackberry" method="_on_pickable_area_body_entered"]
 [connection signal="body_entered" from="blackberry/pickable_area2" to="blackberry" method="_on_pickable_area_2_body_entered"]
-[connection signal="body_exited" from="blackberry/pickable_area2" to="blackberry" method="_on_pickable_area_body_exited"]
+[connection signal="body_entered" from="blackberry/pickable_area2" to="blackberry" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="blackberry/pickable_area2" to="blackberry" method="_on_pickable_area_2_body_exited"]
+[connection signal="body_exited" from="blackberry/pickable_area2" to="blackberry" method="_on_pickable_area_body_exited"]
 [connection signal="body_entered" from="blueberry/pickable_area" to="blueberry" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="blueberry/pickable_area" to="blueberry" method="_on_pickable_area_body_exited"]
 [connection signal="body_entered" from="campfire/cookable_area" to="campfire" method="_on_cookable_area_body_entered"]
 [connection signal="body_exited" from="campfire/cookable_area" to="campfire" method="_on_cookable_area_body_exited"]
-[connection signal="body_entered" from="Veggie_patches/Patch1Zone" to="Veggie_patches" method="_on_patch_1_zone_body_entered"]
-[connection signal="body_exited" from="Veggie_patches/Patch1Zone" to="Veggie_patches" method="_on_patch_1_zone_body_exited"]
-[connection signal="body_entered" from="Veggie_patches/Patch2Zone" to="Veggie_patches" method="_on_patch_2_zone_body_entered"]
-[connection signal="body_exited" from="Veggie_patches/Patch2Zone" to="Veggie_patches" method="_on_patch_2_zone_body_exited"]
-[connection signal="body_entered" from="Veggie_patches/Patch3Zone" to="Veggie_patches" method="_on_patch_3_zone_body_entered"]
-[connection signal="body_exited" from="Veggie_patches/Patch3Zone" to="Veggie_patches" method="_on_patch_3_zone_body_exited"]
+[connection signal="body_entered" from="Carrot_patches/Patch1Zone" to="Carrot_patches" method="_on_patch_1_zone_body_entered"]
+[connection signal="body_exited" from="Carrot_patches/Patch1Zone" to="Carrot_patches" method="_on_patch_1_zone_body_exited"]
+[connection signal="body_entered" from="Carrot_patches/Patch2Zone" to="Carrot_patches" method="_on_patch_2_zone_body_entered"]
+[connection signal="body_exited" from="Carrot_patches/Patch2Zone" to="Carrot_patches" method="_on_patch_2_zone_body_exited"]
+[connection signal="body_entered" from="Carrot_patches/Patch3Zone" to="Carrot_patches" method="_on_patch_3_zone_body_entered"]
+[connection signal="body_exited" from="Carrot_patches/Patch3Zone" to="Carrot_patches" method="_on_patch_3_zone_body_exited"]
