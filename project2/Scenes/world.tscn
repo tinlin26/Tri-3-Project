@@ -1,36 +1,36 @@
-[gd_scene load_steps=77 format=4 uid="uid://bjwnmo4j3a8of"]
+[gd_scene load_steps=83 format=4 uid="uid://bjwnmo4j3a8of"]
 
 [ext_resource type="PackedScene" uid="uid://drd7ui71qystu" path="res://Scenes/player.tscn" id="1_k121w"]
-[ext_resource type="Script" path="res://Scenes/fruit_pick.gd" id="1_kn0ld"]
+[ext_resource type="Script" uid="uid://3ppqdfmdiv37" path="res://Scenes/fruit_pick.gd" id="1_kn0ld"]
 [ext_resource type="TileSet" uid="uid://btiru3ublc3mj" path="res://Tilesets/game_tile_set.tres" id="2_v3ylh"]
 [ext_resource type="Texture2D" uid="uid://dswlb3aoc7hpc" path="res://Art/sprites/background/Water.png" id="3_dqsce"]
 [ext_resource type="Texture2D" uid="uid://d4mp8l00g0kx6" path="res://Art/sprites/background/plains.png" id="3_khc4u"]
 [ext_resource type="Texture2D" uid="uid://cn78gg6lmfcem" path="res://Art/sprites/background/Basic_Grass_Biom_things.png" id="4_rx0cc"]
 [ext_resource type="Texture2D" uid="uid://fb2y4662ra8h" path="res://Art/sprites/background/New Fruit Trees-Photoroom.png" id="5_qohc7"]
 [ext_resource type="Texture2D" uid="uid://clq7hbq3840re" path="res://Art/sprites/ingredients/farm.png" id="6_0we0h"]
-[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="8_2np2s"]
+[ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="8_2np2s"]
 [ext_resource type="AudioStream" uid="uid://kog81jfmwnhj" path="res://Sound/walk-on-grass-1-291984.mp3" id="8_bvc74"]
-[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="9_b6i61"]
-[ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="10_gabrr"]
+[ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="9_b6i61"]
+[ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="10_gabrr"]
 [ext_resource type="AudioStream" uid="uid://0kuf3anl4l5c" path="res://Sound/GodotMusic.mp3" id="11_5gwaj"]
 [ext_resource type="PackedScene" uid="uid://4gau6d2wwjhw" path="res://Scenes/fish.tscn" id="11_hg2fe"]
 [ext_resource type="Texture2D" uid="uid://423f6pfsayh4" path="res://Art/sprites/background/firepit_fixed.png" id="12_kn0ld"]
 [ext_resource type="Texture2D" uid="uid://dkte5qn6lkdi5" path="res://Art/sprites/background/InventoryPanel.png" id="16_hgpy0"]
-[ext_resource type="Script" path="res://Scenes/canvas_layer_inventory.gd" id="16_i4fjy"]
-[ext_resource type="Script" path="res://Scripts/InventoryPanel.gd" id="17_t2t4p"]
+[ext_resource type="Script" uid="uid://rq1nao8jrail" path="res://Scenes/canvas_layer_inventory.gd" id="16_i4fjy"]
+[ext_resource type="Script" uid="uid://c0bol44ljykpq" path="res://Scripts/InventoryPanel.gd" id="17_t2t4p"]
 [ext_resource type="Texture2D" uid="uid://df5c2hixt23j7" path="res://Art/sprites/background/Separate_Fruits_fixed.png" id="18_0pcbe"]
-[ext_resource type="Script" path="res://Scenes/apple.gd" id="19_1cojt"]
+[ext_resource type="Script" uid="uid://fk872s1mmtil" path="res://Scenes/apple.gd" id="19_1cojt"]
+[ext_resource type="Texture2D" uid="uid://6jbmdul5n2p" path="res://Art/sprites/ingredients/Carrot.png" id="20_1vso6"]
 [ext_resource type="Texture2D" uid="uid://dx0cet6l34mmk" path="res://Art/sprites/ingredients/Pie Slice.png" id="20_hmc15"]
-[ext_resource type="Script" path="res://Scenes/cooking.gd" id="20_pt3ps"]
-[ext_resource type="Script" path="res://Scenes/lemon.gd" id="21_pyn1s"]
-[ext_resource type="Script" path="res://Scenes/peach.gd" id="21_yq1aw"]
-[ext_resource type="Script" path="res://Scenes/strawberry.gd" id="22_xbk3s"]
-[ext_resource type="Script" path="res://Scenes/blackberry.gd" id="23_i4fjy"]
-[ext_resource type="Script" path="res://Scenes/blueberry.gd" id="24_pt3ps"]
-[ext_resource type="Script" path="res://Scenes/veggie_patches.gd" id="28_0f254"]
-[ext_resource type="Texture2D" uid="uid://ctpmedukwr33m" path="res://Art/sprites/background/an-8-bit-retro-styled-pixel-art-illustration-of-a-dirt-mound-free-png.png" id="28_uruwh"]
-[ext_resource type="Script" path="res://Scenes/lettuce_patches.gd" id="30_00yh4"]
-[ext_resource type="Texture2D" uid="uid://cjv74urpwdkid" path="res://Art/sprites/background/pixel-art-green-lettuce-head-isolated-on-transparent-background-png.png" id="30_3bjqr"]
+[ext_resource type="Script" uid="uid://blasbo7t0jvkd" path="res://Scenes/cooking.gd" id="20_pt3ps"]
+[ext_resource type="Script" uid="uid://dabxkkx62ojj6" path="res://Scenes/lemon.gd" id="21_pyn1s"]
+[ext_resource type="Script" uid="uid://bdaly8q8ujdo3" path="res://Scenes/peach.gd" id="21_yq1aw"]
+[ext_resource type="Script" uid="uid://dn1ma5lqyibvk" path="res://Scenes/strawberry.gd" id="22_xbk3s"]
+[ext_resource type="Script" uid="uid://cx16lybowrqwu" path="res://Scenes/blackberry.gd" id="23_i4fjy"]
+[ext_resource type="Script" uid="uid://bckqpkthb3q0o" path="res://Scenes/blueberry.gd" id="24_pt3ps"]
+[ext_resource type="Script" uid="uid://53w23gw6bmxu" path="res://Scenes/veggie_patches.gd" id="28_0f254"]
+[ext_resource type="Texture2D" uid="uid://di8dk1i45qwm6" path="res://Art/sprites/background/dirt_patch.png" id="29_3ua1v"]
+[ext_resource type="Script" uid="uid://beuac8l6ygt3o" path="res://Scenes/lettuce_patches.gd" id="30_00yh4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sqwiw"]
 texture = ExtResource("3_dqsce")
@@ -278,6 +278,10 @@ region = Rect2(35, 4, 9, 8)
 atlas = ExtResource("18_0pcbe")
 region = Rect2(51, 4, 9, 8)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_opbav"]
+atlas = ExtResource("20_1vso6")
+region = Rect2(3, 3, 26, 26)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_1cojt"]
 atlas = ExtResource("18_0pcbe")
 region = Rect2(4, 3, 8, 11)
@@ -304,9 +308,31 @@ radius = 25.0799
 [sub_resource type="CircleShape2D" id="CircleShape2D_dt0r1"]
 radius = 46.0
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_r0ikl"]
+atlas = ExtResource("29_3ua1v")
+region = Rect2(48, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1vso6"]
+atlas = ExtResource("29_3ua1v")
+region = Rect2(48, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ua1v"]
+atlas = ExtResource("29_3ua1v")
+region = Rect2(48, 48, 16, 16)
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_qk33o"]
+radius = 8.03531
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_coyub"]
+atlas = ExtResource("6_0we0h")
+region = Rect2(159, 144, 18, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ochwf"]
+atlas = ExtResource("6_0we0h")
+region = Rect2(160, 144, 16, 15)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_vyd8d"]
+radius = 8.03748
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_tpbn5"]
 
@@ -351,8 +377,9 @@ parameters/looping = true
 stream = ExtResource("8_bvc74")
 volume_db = -1.487
 
-[node name="DirtPatch" type="TileMapLayer" parent="GameTileMap"]
-tile_map_data = PackedByteArray("AAAoABQAAAAFAAAAAAAoABUAAAAFAAAAAAApABQAAAAFAAAAAAApABUAAAAFAAAAAAAqABQAAAAFAAAAAAAqABUAAAAFAAAAAAArABQAAAAFAAAAAAArABUAAAAFAAAAAAAsABQAAAAFAAAAAAAsABUAAAAFAAAAAAAtABQAAAAFAAAAAAAtABUAAAAFAAAAAAAuABQAAAAFAAAAAAAuABUAAAAFAAAAAAAtABYAAAAFAAAAAAAuABYAAAAFAAAAAAAhABQAAAAFAAAAAAAhABUAAAAFAAAAAAAiABQAAAAFAAAAAAAiABUAAAAFAAAAAAAjABQAAAAFAAAAAAAjABUAAAAFAAAAAAAkABQAAAAFAAAAAAAkABUAAAAFAAAAAAAlABQAAAAFAAAAAAAlABUAAAAFAAAAAAAmABQAAAAFAAAAAAAmABUAAAAFAAAAAAAnABQAAAAFAAAAAAAnABUAAAAFAAAAAAAhABYAAAAFAAAAAAAiABYAAAAFAAAAAAAjABYAAAAFAAAAAAAfABYAAAAFAAAAAAAfABcAAAAFAAAAAAAgABYAAAAFAAAAAAAgABcAAAAFAAAAAAAhABcAAAAFAAAAAAAeABgAAAAFAAAAAAAfABgAAAAFAAAAAAAdABkAAAAFAAAAAAAeABkAAAAFAAAAAAAcABoAAAAFAAAAAAAcABkAAAAFAAAAAAAdABgAAAAFAAAAAAAbABoAAAAFAAAAAAAbABsAAAAFAAAAAAAaABwAAAAFAAAAAAAmABMAAAAFAAAAAAAnABMAAAAFAAAAAAAoABMAAAAFAAAAAAApABMAAAAFAAAAAAAqABMAAAAFAAAAAAArABMAAAAFAAAAAAAsABMAAAAFAAAAAAAtABMAAAAFAAAAAAAuABMAAAAFAAAAAAAlABMAAAAFAAAAAAA=")
+[node name="Sand" type="TileMapLayer" parent="GameTileMap"]
+position = Vector2(0, -4)
+tile_map_data = PackedByteArray("AAAoABUAAAAFAAAAAAApABQAAAAFAAAAAAApABUAAAAFAAAAAAAqABQAAAAFAAAAAAAqABUAAAAFAAAAAAArABQAAAAFAAAAAAArABUAAAAFAAAAAAAsABQAAAAFAAAAAAAsABUAAAAFAAAAAAAtABQAAAAFAAAAAAAtABUAAAAFAAAAAAAuABQAAAAFAAAAAAAuABUAAAAFAAAAAAAtABYAAAAFAAAAAAAuABYAAAAFAAAAAAAhABQAAAAFAAAAAAAhABUAAAAFAAAAAAAiABQAAAAFAAAAAAAiABUAAAAFAAAAAAAjABQAAAAFAAAAAAAjABUAAAAFAAAAAAAkABQAAAAFAAAAAAAkABUAAAAFAAAAAAAlABQAAAAFAAAAAAAlABUAAAAFAAAAAAAmABQAAAAFAAAAAAAmABUAAAAFAAAAAAAnABQAAAAFAAAAAAAnABUAAAAFAAAAAAAhABYAAAAFAAAAAAAiABYAAAAFAAAAAAAjABYAAAAFAAAAAAAfABYAAAAFAAAAAAAfABcAAAAFAAAAAAAgABYAAAAFAAAAAAAgABcAAAAFAAAAAAAhABcAAAAFAAAAAAAeABgAAAAFAAAAAAAfABgAAAAFAAAAAAAdABkAAAAFAAAAAAAeABkAAAAFAAAAAAAcABoAAAAFAAAAAAAcABkAAAAFAAAAAAAdABgAAAAFAAAAAAAbABoAAAAFAAAAAAAbABsAAAAFAAAAAAAaABwAAAAFAAAAAAAmABMAAAAFAAAAAAAnABMAAAAFAAAAAAAoABMAAAAFAAAAAAApABMAAAAFAAAAAAAqABMAAAAFAAAAAAArABMAAAAFAAAAAAAsABMAAAAFAAAAAAAtABMAAAAFAAAAAAAuABMAAAAFAAAAAAAlABMAAAAFAAAAAAAoABQAAAAFAAAAAAA=")
 tile_set = SubResource("TileSet_6myok")
 
 [node name="Fish2" type="Node2D" parent="GameTileMap"]
@@ -503,19 +530,19 @@ shape = SubResource("RectangleShape2D_ys1us")
 
 [node name="CollisionShape2D16" type="CollisionShape2D" parent="StaticBody2D"]
 z_index = 1
-position = Vector2(445.95, -13.4)
+position = Vector2(378, -48)
 scale = Vector2(1.45, 1.45)
 shape = SubResource("CircleShape2D_x22tt")
 
 [node name="CollisionShape2D20" type="CollisionShape2D" parent="StaticBody2D"]
 z_index = 1
-position = Vector2(553.11, 32.13)
+position = Vector2(605, 36)
 scale = Vector2(1.43, 1.43)
 shape = SubResource("CircleShape2D_x22tt")
 
 [node name="CollisionShape2D22" type="CollisionShape2D" parent="StaticBody2D"]
 z_index = 1
-position = Vector2(430.89, 88.93)
+position = Vector2(433, 95)
 scale = Vector2(1.54, 1.54)
 shape = SubResource("CircleShape2D_x22tt")
 
@@ -527,7 +554,7 @@ shape = SubResource("CircleShape2D_2d5s1")
 
 [node name="CollisionShape2D29" type="CollisionShape2D" parent="StaticBody2D"]
 z_index = 1
-position = Vector2(489.55, 47.09)
+position = Vector2(502, 44)
 scale = Vector2(1.07, 1.07)
 shape = SubResource("CircleShape2D_y6ddf")
 
@@ -588,8 +615,8 @@ scale = Vector2(0.139913, 0.44878)
 texture = SubResource("AtlasTexture_hgpy0")
 
 [node name="Lemon" type="Sprite2D" parent="CanvasLayer/InventoryPanel/InventoryBoxes4"]
-position = Vector2(0.358278, 0.0453396)
-scale = Vector2(1.68598, 1.97726)
+position = Vector2(0.358307, -0.254852)
+scale = Vector2(1.84427, 2.36195)
 texture = SubResource("AtlasTexture_axeuq")
 
 [node name="LemonCountLabel" type="Label" parent="CanvasLayer/InventoryPanel/InventoryBoxes4/Lemon"]
@@ -606,8 +633,8 @@ scale = Vector2(0.139545, 0.437032)
 texture = SubResource("AtlasTexture_hgpy0")
 
 [node name="Strawberry" type="Sprite2D" parent="CanvasLayer/InventoryPanel/InventoryBoxes5"]
-position = Vector2(-0.0724373, -0.892802)
-scale = Vector2(1.92952, 1.95698)
+position = Vector2(0.289337, 0.672775)
+scale = Vector2(2.09032, 2.19182)
 texture = SubResource("AtlasTexture_0pcbe")
 
 [node name="StrawberryCountLabel" type="Label" parent="CanvasLayer/InventoryPanel/InventoryBoxes5/Strawberry"]
@@ -623,20 +650,34 @@ position = Vector2(-5.62913, 5.88421)
 scale = Vector2(0.145244, 0.447364)
 texture = SubResource("AtlasTexture_hgpy0")
 
+[node name="Carrot" type="Sprite2D" parent="CanvasLayer/InventoryPanel/InventoryBoxes2"]
+position = Vector2(-0.271384, 0.273425)
+scale = Vector2(0.769534, 0.585745)
+texture = SubResource("AtlasTexture_opbav")
+
+[node name="CarrotCountLabel" type="Label" parent="CanvasLayer/InventoryPanel/InventoryBoxes2/Carrot"]
+offset_left = -5.06758
+offset_top = -9.8667
+offset_right = 6.93242
+offset_bottom = 13.1333
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 15
+metadata/_edit_use_anchors_ = true
+
 [node name="InventoryBoxes6" type="Sprite2D" parent="CanvasLayer/InventoryPanel"]
 position = Vector2(-9.7356, -5.90456)
 scale = Vector2(0.1478, 0.451618)
 texture = SubResource("AtlasTexture_hgpy0")
 
 [node name="Peach" type="Sprite2D" parent="CanvasLayer/InventoryPanel/InventoryBoxes6"]
-position = Vector2(-0.225485, -0.560933)
-scale = Vector2(2.13487, 1.43238)
+position = Vector2(0.457672, 0.0450706)
+scale = Vector2(2.39106, 1.76293)
 texture = SubResource("AtlasTexture_1cojt")
 
 [node name="PeachCountLabel" type="Label" parent="CanvasLayer/InventoryPanel/InventoryBoxes6/Peach"]
-offset_left = -2.99629
+offset_left = -2.99627
 offset_top = -5.86014
-offset_right = 9.00371
+offset_right = 9.00373
 offset_bottom = 17.1399
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 10
@@ -648,8 +689,8 @@ scale = Vector2(0.148907, 0.447977)
 texture = SubResource("AtlasTexture_hgpy0")
 
 [node name="Blackberry" type="Sprite2D" parent="CanvasLayer/InventoryPanel/InventoryBoxes7"]
-position = Vector2(0.956589, -0.816919)
-scale = Vector2(1.58218, 1.26377)
+position = Vector2(0.448029, -0.20599)
+scale = Vector2(1.84588, 1.56923)
 texture = SubResource("AtlasTexture_pyn1s")
 
 [node name="BlackberryCountLabel" type="Label" parent="CanvasLayer/InventoryPanel/InventoryBoxes7/Blackberry"]
@@ -667,9 +708,9 @@ scale = Vector2(0.14458, 0.461961)
 texture = SubResource("AtlasTexture_hgpy0")
 
 [node name="Blueberry" type="Sprite2D" parent="CanvasLayer/InventoryPanel/InventoryBoxes8"]
-position = Vector2(0.092926, 0.141953)
+position = Vector2(0.16748, -0.155243)
 rotation = -3.14159
-scale = Vector2(1.92287, 1.96117)
+scale = Vector2(2.29069, 2.38462)
 texture = SubResource("AtlasTexture_no8kt")
 
 [node name="BlueberryCountLabel" type="Label" parent="CanvasLayer/InventoryPanel/InventoryBoxes8/Blueberry"]
@@ -686,8 +727,8 @@ scale = Vector2(0.140599, 0.447135)
 texture = SubResource("AtlasTexture_hgpy0")
 
 [node name="Apple" type="Sprite2D" parent="CanvasLayer/InventoryPanel/InventoryBoxes"]
-position = Vector2(-0.292142, -0.711423)
-scale = Vector2(1.63215, 1.47308)
+position = Vector2(0.24649, -0.0993385)
+scale = Vector2(1.73008, 1.58437)
 texture = SubResource("AtlasTexture_yq1aw")
 
 [node name="AppleCountLabel" type="Label" parent="CanvasLayer/InventoryPanel/InventoryBoxes/Apple"]
@@ -717,6 +758,27 @@ offset_bottom = 20.96
 rotation = 0.00967493
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 18
+metadata/_edit_use_anchors_ = true
+
+[node name="InventoryBoxes9" type="Sprite2D" parent="CanvasLayer/InventoryPanel"]
+position = Vector2(-9.66796, 5.88421)
+scale = Vector2(0.145244, 0.447364)
+texture = SubResource("AtlasTexture_hgpy0")
+
+[node name="Tomato" type="Sprite2D" parent="CanvasLayer/InventoryPanel/InventoryBoxes9"]
+position = Vector2(0.0831299, -1.87809)
+scale = Vector2(1.26001, 0.99374)
+texture = SubResource("AtlasTexture_dt0r1")
+
+[node name="TomatoCountLabel" type="Label" parent="CanvasLayer/InventoryPanel/InventoryBoxes9/Tomato"]
+offset_left = -5.23951
+offset_top = -12.04
+offset_right = 7.76049
+offset_bottom = 20.96
+rotation = 0.00967493
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 18
+metadata/_edit_use_anchors_ = true
 
 [node name="apple" type="Node2D" parent="."]
 script = ExtResource("19_1cojt")
@@ -901,73 +963,73 @@ position = Vector2(88, 90)
 
 [node name="cooking" type="Node2D" parent="."]
 
-[node name="Carrot_patches" type="Node2D" parent="."]
+[node name="Carrot_patch" type="Node2D" parent="."]
 script = ExtResource("28_0f254")
 
-[node name="Patch1" type="Sprite2D" parent="Carrot_patches"]
-position = Vector2(512, 154)
-scale = Vector2(0.05, 0.05)
-texture = ExtResource("28_uruwh")
+[node name="Carrot1" type="Sprite2D" parent="Carrot_patch"]
+position = Vector2(444, 120)
+scale = Vector2(1.6875, 1.625)
+texture = SubResource("AtlasTexture_r0ikl")
 
-[node name="Patch2" type="Sprite2D" parent="Carrot_patches"]
-position = Vector2(619, 198)
-scale = Vector2(0.05, 0.05)
-texture = ExtResource("28_uruwh")
+[node name="Carrot2" type="Sprite2D" parent="Carrot_patch"]
+position = Vector2(671, 204)
+scale = Vector2(1.4375, 1.4375)
+texture = SubResource("AtlasTexture_1vso6")
 
-[node name="Patch3" type="Sprite2D" parent="Carrot_patches"]
-position = Vector2(497, 254)
-scale = Vector2(0.06, 0.06)
-texture = ExtResource("28_uruwh")
+[node name="Carrot3" type="Sprite2D" parent="Carrot_patch"]
+position = Vector2(500, 262)
+scale = Vector2(1.5625, 1.5625)
+texture = SubResource("AtlasTexture_3ua1v")
 
-[node name="Patch1Zone" type="Area2D" parent="Carrot_patches"]
+[node name="Patch1Zone" type="Area2D" parent="Carrot_patch"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Carrot_patches/Patch1Zone"]
-position = Vector2(511.79, 153.37)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Carrot_patch/Patch1Zone"]
+position = Vector2(444, 119)
 scale = Vector2(2.64, 2.64)
 shape = SubResource("CircleShape2D_qk33o")
 debug_color = Color(0.956863, 0, 0, 0.419608)
 
-[node name="Patch2Zone" type="Area2D" parent="Carrot_patches"]
+[node name="Patch2Zone" type="Area2D" parent="Carrot_patch"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Carrot_patches/Patch2Zone"]
-position = Vector2(619, 200)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Carrot_patch/Patch2Zone"]
+position = Vector2(671, 203)
 scale = Vector2(2.64, 2.64)
 shape = SubResource("CircleShape2D_qk33o")
 debug_color = Color(0.956863, 0, 0, 0.419608)
 
-[node name="Patch3Zone" type="Area2D" parent="Carrot_patches"]
+[node name="Patch3Zone" type="Area2D" parent="Carrot_patch"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Carrot_patches/Patch3Zone"]
-position = Vector2(497, 258)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Carrot_patch/Patch3Zone"]
+position = Vector2(499, 262)
 scale = Vector2(2.64, 2.64)
 shape = SubResource("CircleShape2D_qk33o")
 debug_color = Color(0.956863, 0, 0, 0.419608)
 
-[node name="Lettuce_patches" type="Node2D" parent="."]
+[node name="Tomato_patch" type="Node2D" parent="."]
 script = ExtResource("30_00yh4")
 
-[node name="Lettuce1" type="Sprite2D" parent="Lettuce_patches"]
-position = Vector2(555.46, 213.8)
-scale = Vector2(0.06, 0.06)
-texture = ExtResource("30_3bjqr")
+[node name="Tomato1" type="Sprite2D" parent="Tomato_patch"]
+position = Vector2(568, 211)
+scale = Vector2(1.05556, 1.25)
+texture = SubResource("AtlasTexture_coyub")
 
-[node name="Lettuce2" type="Sprite2D" parent="Lettuce_patches"]
-position = Vector2(601.918, 124.658)
-scale = Vector2(0.084, 0.084)
-texture = ExtResource("30_3bjqr")
+[node name="Tomato2" type="Sprite2D" parent="Tomato_patch"]
+position = Vector2(603, 128)
+scale = Vector2(1.23462, 1.2648)
+texture = SubResource("AtlasTexture_ochwf")
 
-[node name="Lettuce1Zone" type="Area2D" parent="Lettuce_patches"]
+[node name="Tomato1Zone" type="Area2D" parent="Tomato_patch"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Lettuce_patches/Lettuce1Zone"]
-position = Vector2(602.29, 126.5)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tomato_patch/Tomato1Zone"]
+position = Vector2(602, 126)
 scale = Vector2(2.74, 2.74)
 shape = SubResource("CircleShape2D_vyd8d")
 debug_color = Color(0.976471, 0, 0, 0.419608)
 
-[node name="Lettuce2Zone" type="Area2D" parent="Lettuce_patches"]
+[node name="Tomato2Zone" type="Area2D" parent="Tomato_patch"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Lettuce_patches/Lettuce2Zone"]
-position = Vector2(555.32, 213.7)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tomato_patch/Tomato2Zone"]
+position = Vector2(568, 211)
 scale = Vector2(1.95, 1.95)
 shape = SubResource("CircleShape2D_tpbn5")
 debug_color = Color(0.945098, 0, 0, 0.419608)
@@ -1022,15 +1084,15 @@ debug_color = Color(0.945098, 0, 0, 0.419608)
 [connection signal="body_exited" from="blueberry/pickable_area" to="blueberry" method="_on_pickable_area_body_exited"]
 [connection signal="body_entered" from="campfire/cookable_area" to="campfire" method="_on_cookable_area_body_entered"]
 [connection signal="body_exited" from="campfire/cookable_area" to="campfire" method="_on_cookable_area_body_exited"]
-[connection signal="body_entered" from="Carrot_patches/Patch1Zone" to="Carrot_patches" method="_on_patch_1_zone_body_entered"]
-[connection signal="body_exited" from="Carrot_patches/Patch1Zone" to="Carrot_patches" method="_on_patch_1_zone_body_exited"]
-[connection signal="body_entered" from="Carrot_patches/Patch2Zone" to="Carrot_patches" method="_on_patch_2_zone_body_entered"]
-[connection signal="body_exited" from="Carrot_patches/Patch2Zone" to="Carrot_patches" method="_on_patch_2_zone_body_exited"]
-[connection signal="body_entered" from="Carrot_patches/Patch3Zone" to="Carrot_patches" method="_on_patch_3_zone_body_entered"]
-[connection signal="body_exited" from="Carrot_patches/Patch3Zone" to="Carrot_patches" method="_on_patch_3_zone_body_exited"]
-[connection signal="area_entered" from="Lettuce_patches/Lettuce1Zone" to="Lettuce_patches" method="_on_lettuce_1_zone_area_entered"]
-[connection signal="area_shape_exited" from="Lettuce_patches/Lettuce1Zone" to="GameTileMap" method="_on_lettuce_1_zone_area_shape_exited"]
-[connection signal="body_entered" from="Lettuce_patches/Lettuce1Zone" to="Lettuce_patches" method="_on_lettuce_1_zone_body_entered"]
-[connection signal="body_exited" from="Lettuce_patches/Lettuce1Zone" to="Lettuce_patches" method="_on_lettuce_1_zone_body_exited"]
-[connection signal="body_entered" from="Lettuce_patches/Lettuce2Zone" to="Lettuce_patches" method="_on_lettuce_2_zone_body_entered"]
-[connection signal="body_exited" from="Lettuce_patches/Lettuce2Zone" to="Lettuce_patches" method="_on_lettuce_2_zone_body_exited"]
+[connection signal="body_entered" from="Carrot_patch/Patch1Zone" to="Carrot_patch" method="_on_patch_1_zone_body_entered"]
+[connection signal="body_exited" from="Carrot_patch/Patch1Zone" to="Carrot_patch" method="_on_patch_1_zone_body_exited"]
+[connection signal="body_entered" from="Carrot_patch/Patch2Zone" to="Carrot_patch" method="_on_patch_2_zone_body_entered"]
+[connection signal="body_exited" from="Carrot_patch/Patch2Zone" to="Carrot_patch" method="_on_patch_2_zone_body_exited"]
+[connection signal="body_entered" from="Carrot_patch/Patch3Zone" to="Carrot_patch" method="_on_patch_3_zone_body_entered"]
+[connection signal="body_exited" from="Carrot_patch/Patch3Zone" to="Carrot_patch" method="_on_patch_3_zone_body_exited"]
+[connection signal="area_entered" from="Tomato_patch/Tomato1Zone" to="Tomato_patch" method="_on_lettuce_1_zone_area_entered"]
+[connection signal="area_shape_exited" from="Tomato_patch/Tomato1Zone" to="GameTileMap" method="_on_lettuce_1_zone_area_shape_exited"]
+[connection signal="body_entered" from="Tomato_patch/Tomato1Zone" to="Tomato_patch" method="_on_lettuce_1_zone_body_entered"]
+[connection signal="body_exited" from="Tomato_patch/Tomato1Zone" to="Tomato_patch" method="_on_lettuce_1_zone_body_exited"]
+[connection signal="body_entered" from="Tomato_patch/Tomato2Zone" to="Tomato_patch" method="_on_lettuce_2_zone_body_entered"]
+[connection signal="body_exited" from="Tomato_patch/Tomato2Zone" to="Tomato_patch" method="_on_lettuce_2_zone_body_exited"]
