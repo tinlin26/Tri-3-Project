@@ -4,13 +4,10 @@ var player_in_area = false
 var carrotCount = 0
 var inventory_canvas: Node = null
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	# Update with your actual CanvasLayer path (copy from editor if unsure)
 	inventory_canvas = get_node("../CanvasLayer")
 	
 	
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	if player_in_area and Input.is_action_just_pressed("e"):
 		carrotCount += 1

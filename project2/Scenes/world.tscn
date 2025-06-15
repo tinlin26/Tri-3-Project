@@ -1,4 +1,4 @@
-[gd_scene load_steps=83 format=4 uid="uid://bjwnmo4j3a8of"]
+[gd_scene load_steps=85 format=4 uid="uid://bjwnmo4j3a8of"]
 
 [ext_resource type="PackedScene" uid="uid://drd7ui71qystu" path="res://Scenes/player.tscn" id="1_k121w"]
 [ext_resource type="Script" uid="uid://3ppqdfmdiv37" path="res://Scenes/fruit_pick.gd" id="1_kn0ld"]
@@ -25,10 +25,11 @@
 [ext_resource type="Script" uid="uid://blasbo7t0jvkd" path="res://Scenes/cooking.gd" id="20_pt3ps"]
 [ext_resource type="Script" uid="uid://dabxkkx62ojj6" path="res://Scenes/lemon.gd" id="21_pyn1s"]
 [ext_resource type="Script" uid="uid://bdaly8q8ujdo3" path="res://Scenes/peach.gd" id="21_yq1aw"]
+[ext_resource type="Texture2D" uid="uid://b3m6wsrofjneh" path="res://Art/sprites/ingredients/Tomato.png" id="22_3ua1v"]
 [ext_resource type="Script" uid="uid://dn1ma5lqyibvk" path="res://Scenes/strawberry.gd" id="22_xbk3s"]
 [ext_resource type="Script" uid="uid://cx16lybowrqwu" path="res://Scenes/blackberry.gd" id="23_i4fjy"]
 [ext_resource type="Script" uid="uid://bckqpkthb3q0o" path="res://Scenes/blueberry.gd" id="24_pt3ps"]
-[ext_resource type="Script" uid="uid://53w23gw6bmxu" path="res://Scenes/veggie_patches.gd" id="28_0f254"]
+[ext_resource type="Script" uid="uid://2qph47wo3tj6" path="res://Scenes/veggie_patches.gd" id="28_0f254"]
 [ext_resource type="Texture2D" uid="uid://di8dk1i45qwm6" path="res://Art/sprites/background/dirt_patch.png" id="29_3ua1v"]
 [ext_resource type="Script" uid="uid://beuac8l6ygt3o" path="res://Scenes/lettuce_patches.gd" id="30_00yh4"]
 
@@ -301,6 +302,9 @@ region = Rect2(18, 3, 11, 11)
 [sub_resource type="AtlasTexture" id="AtlasTexture_dt0r1"]
 atlas = ExtResource("20_hmc15")
 region = Rect2(0, 0, 16, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p5wkl"]
+atlas = ExtResource("22_3ua1v")
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_i4fjy"]
 radius = 25.0799
@@ -610,7 +614,7 @@ texture = SubResource("AtlasTexture_t2t4p")
 script = ExtResource("17_t2t4p")
 
 [node name="InventoryBoxes4" type="Sprite2D" parent="CanvasLayer/InventoryPanel"]
-position = Vector2(-1.99382, -5.90456)
+position = Vector2(-1.89282, -5.90456)
 scale = Vector2(0.139913, 0.44878)
 texture = SubResource("AtlasTexture_hgpy0")
 
@@ -628,7 +632,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 9
 
 [node name="InventoryBoxes5" type="Sprite2D" parent="CanvasLayer/InventoryPanel"]
-position = Vector2(1.80234, -5.90455)
+position = Vector2(2.0043, -5.90455)
 scale = Vector2(0.139545, 0.437032)
 texture = SubResource("AtlasTexture_hgpy0")
 
@@ -646,7 +650,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 9
 
 [node name="InventoryBoxes2" type="Sprite2D" parent="CanvasLayer/InventoryPanel"]
-position = Vector2(-5.62913, 5.88421)
+position = Vector2(-5.73007, 5.8842)
 scale = Vector2(0.145244, 0.447364)
 texture = SubResource("AtlasTexture_hgpy0")
 
@@ -684,7 +688,7 @@ theme_override_font_sizes/font_size = 10
 metadata/_edit_use_anchors_ = true
 
 [node name="InventoryBoxes7" type="Sprite2D" parent="CanvasLayer/InventoryPanel"]
-position = Vector2(5.73911, -5.90455)
+position = Vector2(5.94104, -5.90455)
 scale = Vector2(0.148907, 0.447977)
 texture = SubResource("AtlasTexture_hgpy0")
 
@@ -702,7 +706,7 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 10
 
 [node name="InventoryBoxes8" type="Sprite2D" parent="CanvasLayer/InventoryPanel"]
-position = Vector2(9.67588, -5.90456)
+position = Vector2(9.87781, -5.90456)
 rotation = 3.14159
 scale = Vector2(0.14458, 0.461961)
 texture = SubResource("AtlasTexture_hgpy0")
@@ -722,7 +726,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 9
 
 [node name="InventoryBoxes" type="Sprite2D" parent="CanvasLayer/InventoryPanel"]
-position = Vector2(-5.78999, -5.90456)
+position = Vector2(-5.78998, -5.90456)
 scale = Vector2(0.140599, 0.447135)
 texture = SubResource("AtlasTexture_hgpy0")
 
@@ -741,8 +745,8 @@ theme_override_font_sizes/font_size = 10
 metadata/_edit_use_anchors_ = true
 
 [node name="InventoryBoxes3" type="Sprite2D" parent="CanvasLayer/InventoryPanel"]
-position = Vector2(-9.66796, 5.88421)
-scale = Vector2(0.145244, 0.447364)
+position = Vector2(-9.75378, 5.88421)
+scale = Vector2(0.146408, 0.447364)
 texture = SubResource("AtlasTexture_hgpy0")
 
 [node name="Pie" type="Sprite2D" parent="CanvasLayer/InventoryPanel/InventoryBoxes3"]
@@ -761,14 +765,14 @@ theme_override_font_sizes/font_size = 18
 metadata/_edit_use_anchors_ = true
 
 [node name="InventoryBoxes9" type="Sprite2D" parent="CanvasLayer/InventoryPanel"]
-position = Vector2(-9.66796, 5.88421)
+position = Vector2(-1.89322, 6.15789)
 scale = Vector2(0.145244, 0.447364)
 texture = SubResource("AtlasTexture_hgpy0")
 
 [node name="Tomato" type="Sprite2D" parent="CanvasLayer/InventoryPanel/InventoryBoxes9"]
-position = Vector2(0.0831299, -1.87809)
-scale = Vector2(1.26001, 0.99374)
-texture = SubResource("AtlasTexture_dt0r1")
+position = Vector2(0.347733, 0)
+scale = Vector2(0.716907, 0.573535)
+texture = SubResource("AtlasTexture_p5wkl")
 
 [node name="TomatoCountLabel" type="Label" parent="CanvasLayer/InventoryPanel/InventoryBoxes9/Tomato"]
 offset_left = -5.23951
@@ -1090,9 +1094,9 @@ debug_color = Color(0.945098, 0, 0, 0.419608)
 [connection signal="body_exited" from="Carrot_patch/Patch2Zone" to="Carrot_patch" method="_on_patch_2_zone_body_exited"]
 [connection signal="body_entered" from="Carrot_patch/Patch3Zone" to="Carrot_patch" method="_on_patch_3_zone_body_entered"]
 [connection signal="body_exited" from="Carrot_patch/Patch3Zone" to="Carrot_patch" method="_on_patch_3_zone_body_exited"]
-[connection signal="area_entered" from="Tomato_patch/Tomato1Zone" to="Tomato_patch" method="_on_lettuce_1_zone_area_entered"]
-[connection signal="area_shape_exited" from="Tomato_patch/Tomato1Zone" to="GameTileMap" method="_on_lettuce_1_zone_area_shape_exited"]
-[connection signal="body_entered" from="Tomato_patch/Tomato1Zone" to="Tomato_patch" method="_on_lettuce_1_zone_body_entered"]
-[connection signal="body_exited" from="Tomato_patch/Tomato1Zone" to="Tomato_patch" method="_on_lettuce_1_zone_body_exited"]
+[connection signal="body_entered" from="Tomato_patch/Tomato1Zone" to="Tomato_patch" method="_on_tomato_1_zone_body_entered"]
+[connection signal="body_exited" from="Tomato_patch/Tomato1Zone" to="Tomato_patch" method="_on_tomato_1_zone_body_exited"]
 [connection signal="body_entered" from="Tomato_patch/Tomato2Zone" to="Tomato_patch" method="_on_lettuce_2_zone_body_entered"]
+[connection signal="body_entered" from="Tomato_patch/Tomato2Zone" to="Tomato_patch" method="_on_tomato_2_zone_body_entered"]
 [connection signal="body_exited" from="Tomato_patch/Tomato2Zone" to="Tomato_patch" method="_on_lettuce_2_zone_body_exited"]
+[connection signal="body_exited" from="Tomato_patch/Tomato2Zone" to="Tomato_patch" method="_on_tomato_2_zone_body_exited"]
