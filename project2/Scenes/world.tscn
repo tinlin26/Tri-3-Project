@@ -1,4 +1,4 @@
-[gd_scene load_steps=85 format=4 uid="uid://bjwnmo4j3a8of"]
+[gd_scene load_steps=87 format=4 uid="uid://bjwnmo4j3a8of"]
 
 [ext_resource type="PackedScene" uid="uid://drd7ui71qystu" path="res://Scenes/player.tscn" id="1_k121w"]
 [ext_resource type="Script" uid="uid://3ppqdfmdiv37" path="res://Scenes/fruit_pick.gd" id="1_kn0ld"]
@@ -28,6 +28,7 @@
 [ext_resource type="Texture2D" uid="uid://b3m6wsrofjneh" path="res://Art/sprites/ingredients/Tomato.png" id="22_3ua1v"]
 [ext_resource type="Script" uid="uid://dn1ma5lqyibvk" path="res://Scenes/strawberry.gd" id="22_xbk3s"]
 [ext_resource type="Script" uid="uid://cx16lybowrqwu" path="res://Scenes/blackberry.gd" id="23_i4fjy"]
+[ext_resource type="Texture2D" uid="uid://djdyqykkobwes" path="res://Art/sprites/ingredients/Noodle Bowl.png" id="23_r0ikl"]
 [ext_resource type="Script" uid="uid://bckqpkthb3q0o" path="res://Scenes/blueberry.gd" id="24_pt3ps"]
 [ext_resource type="Script" uid="uid://2qph47wo3tj6" path="res://Scenes/veggie_patches.gd" id="28_0f254"]
 [ext_resource type="Texture2D" uid="uid://di8dk1i45qwm6" path="res://Art/sprites/background/dirt_patch.png" id="29_3ua1v"]
@@ -303,8 +304,12 @@ region = Rect2(18, 3, 11, 11)
 atlas = ExtResource("20_hmc15")
 region = Rect2(0, 0, 16, 13)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_p5wkl"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_r74th"]
 atlas = ExtResource("22_3ua1v")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p5wkl"]
+atlas = ExtResource("23_r0ikl")
+region = Rect2(1, 2, 14, 13)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_i4fjy"]
 radius = 25.0799
@@ -608,7 +613,7 @@ disabled = true
 script = ExtResource("16_i4fjy")
 
 [node name="InventoryPanel" type="Sprite2D" parent="CanvasLayer"]
-position = Vector2(597.75, 174.5)
+position = Vector2(596.75, 173.5)
 scale = Vector2(9.90385, 3.65385)
 texture = SubResource("AtlasTexture_t2t4p")
 script = ExtResource("17_t2t4p")
@@ -650,7 +655,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 9
 
 [node name="InventoryBoxes2" type="Sprite2D" parent="CanvasLayer/InventoryPanel"]
-position = Vector2(1.9437, 5.8842)
+position = Vector2(-1.89322, 5.8842)
 scale = Vector2(0.145244, 0.447364)
 texture = SubResource("AtlasTexture_hgpy0")
 
@@ -765,14 +770,14 @@ theme_override_font_sizes/font_size = 18
 metadata/_edit_use_anchors_ = true
 
 [node name="InventoryBoxes9" type="Sprite2D" parent="CanvasLayer/InventoryPanel"]
-position = Vector2(5.88156, 6.15789)
+position = Vector2(1.9437, 6.15789)
 scale = Vector2(0.145244, 0.447364)
 texture = SubResource("AtlasTexture_hgpy0")
 
 [node name="Tomato" type="Sprite2D" parent="CanvasLayer/InventoryPanel/InventoryBoxes9"]
 position = Vector2(0.347733, 0)
 scale = Vector2(0.716907, 0.573535)
-texture = SubResource("AtlasTexture_p5wkl")
+texture = SubResource("AtlasTexture_r74th")
 
 [node name="TomatoCountLabel" type="Label" parent="CanvasLayer/InventoryPanel/InventoryBoxes9/Tomato"]
 offset_left = -5.23951
@@ -790,8 +795,8 @@ scale = Vector2(0.145244, 0.447364)
 texture = SubResource("AtlasTexture_hgpy0")
 
 [node name="Noodles" type="Sprite2D" parent="CanvasLayer/InventoryPanel/InventoryBoxes10"]
-position = Vector2(0.347733, 0)
-scale = Vector2(0.716907, 0.573535)
+position = Vector2(-3.05176e-05, 7.62939e-06)
+scale = Vector2(1.29105, 1.22354)
 texture = SubResource("AtlasTexture_p5wkl")
 
 [node name="NoodlesCountLabel" type="Label" parent="CanvasLayer/InventoryPanel/InventoryBoxes10/Noodles"]
