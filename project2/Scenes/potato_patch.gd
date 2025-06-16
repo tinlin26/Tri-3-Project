@@ -10,8 +10,9 @@ func _ready():
 	
 func _process(_delta):
 	if player_in_area and Input.is_action_just_pressed("space_pick"):
-		potatoCount += 1
-		print("Potatoes picked:" + str(potatoCount))
+		if randf_range(-10.0,10.0) < -5.0:
+			potatoCount += 1
+			print("Potatoes picked:" + str(potatoCount))
 		
 		if inventory_canvas:
 			inventory_canvas.update_potato_count(potatoCount)

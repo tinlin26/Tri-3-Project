@@ -1,42 +1,42 @@
 [gd_scene load_steps=96 format=4 uid="uid://bjwnmo4j3a8of"]
 
 [ext_resource type="PackedScene" uid="uid://drd7ui71qystu" path="res://Scenes/player.tscn" id="1_k121w"]
-[ext_resource type="Script" uid="uid://3ppqdfmdiv37" path="res://Scenes/fruit_pick.gd" id="1_kn0ld"]
+[ext_resource type="Script" path="res://Scenes/fruit_pick.gd" id="1_kn0ld"]
 [ext_resource type="TileSet" uid="uid://btiru3ublc3mj" path="res://Tilesets/game_tile_set.tres" id="2_v3ylh"]
 [ext_resource type="Texture2D" uid="uid://dswlb3aoc7hpc" path="res://Art/sprites/background/Water.png" id="3_dqsce"]
 [ext_resource type="Texture2D" uid="uid://d4mp8l00g0kx6" path="res://Art/sprites/background/plains.png" id="3_khc4u"]
 [ext_resource type="Texture2D" uid="uid://cn78gg6lmfcem" path="res://Art/sprites/background/Basic_Grass_Biom_things.png" id="4_rx0cc"]
 [ext_resource type="Texture2D" uid="uid://fb2y4662ra8h" path="res://Art/sprites/background/New Fruit Trees-Photoroom.png" id="5_qohc7"]
 [ext_resource type="Texture2D" uid="uid://clq7hbq3840re" path="res://Art/sprites/ingredients/farm.png" id="6_0we0h"]
-[ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="8_2np2s"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="8_2np2s"]
 [ext_resource type="AudioStream" uid="uid://kog81jfmwnhj" path="res://Sound/walk-on-grass-1-291984.mp3" id="8_bvc74"]
-[ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="9_b6i61"]
-[ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="10_gabrr"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="9_b6i61"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="10_gabrr"]
 [ext_resource type="AudioStream" uid="uid://0kuf3anl4l5c" path="res://Sound/GodotMusic.mp3" id="11_5gwaj"]
 [ext_resource type="Texture2D" uid="uid://423f6pfsayh4" path="res://Art/sprites/background/firepit_fixed.png" id="12_kn0ld"]
 [ext_resource type="Texture2D" uid="uid://dkte5qn6lkdi5" path="res://Art/sprites/background/InventoryPanel.png" id="16_hgpy0"]
-[ext_resource type="Script" uid="uid://rq1nao8jrail" path="res://Scenes/canvas_layer_inventory.gd" id="16_i4fjy"]
-[ext_resource type="Script" uid="uid://c0bol44ljykpq" path="res://Scripts/InventoryPanel.gd" id="17_t2t4p"]
+[ext_resource type="Script" path="res://Scenes/canvas_layer_inventory.gd" id="16_i4fjy"]
+[ext_resource type="Script" path="res://Scripts/InventoryPanel.gd" id="17_t2t4p"]
 [ext_resource type="Texture2D" uid="uid://df5c2hixt23j7" path="res://Art/sprites/background/Separate_Fruits_fixed.png" id="18_0pcbe"]
-[ext_resource type="Script" uid="uid://fk872s1mmtil" path="res://Scenes/apple.gd" id="19_1cojt"]
+[ext_resource type="Script" path="res://Scenes/apple.gd" id="19_1cojt"]
 [ext_resource type="Texture2D" uid="uid://6jbmdul5n2p" path="res://Art/sprites/ingredients/Carrot.png" id="20_1vso6"]
 [ext_resource type="Texture2D" uid="uid://dx0cet6l34mmk" path="res://Art/sprites/ingredients/Pie Slice.png" id="20_hmc15"]
-[ext_resource type="Script" uid="uid://blasbo7t0jvkd" path="res://Scenes/cooking.gd" id="20_pt3ps"]
-[ext_resource type="Script" uid="uid://dabxkkx62ojj6" path="res://Scenes/lemon.gd" id="21_pyn1s"]
-[ext_resource type="Script" uid="uid://bdaly8q8ujdo3" path="res://Scenes/peach.gd" id="21_yq1aw"]
+[ext_resource type="Script" path="res://Scenes/cooking.gd" id="20_pt3ps"]
+[ext_resource type="Script" path="res://Scenes/lemon.gd" id="21_pyn1s"]
+[ext_resource type="Script" path="res://Scenes/peach.gd" id="21_yq1aw"]
 [ext_resource type="Texture2D" uid="uid://b3m6wsrofjneh" path="res://Art/sprites/ingredients/Tomato.png" id="22_3ua1v"]
-[ext_resource type="Script" uid="uid://dn1ma5lqyibvk" path="res://Scenes/strawberry.gd" id="22_xbk3s"]
-[ext_resource type="Script" uid="uid://cx16lybowrqwu" path="res://Scenes/blackberry.gd" id="23_i4fjy"]
+[ext_resource type="Script" path="res://Scenes/strawberry.gd" id="22_xbk3s"]
+[ext_resource type="Script" path="res://Scenes/blackberry.gd" id="23_i4fjy"]
 [ext_resource type="Texture2D" uid="uid://djdyqykkobwes" path="res://Art/sprites/ingredients/Noodle Bowl.png" id="23_r0ikl"]
-[ext_resource type="Script" uid="uid://bckqpkthb3q0o" path="res://Scenes/blueberry.gd" id="24_pt3ps"]
+[ext_resource type="Script" path="res://Scenes/blueberry.gd" id="24_pt3ps"]
 [ext_resource type="Texture2D" uid="uid://bxhj32iuh7rkp" path="res://Art/sprites/ingredients/fish.png" id="25_coyub"]
 [ext_resource type="Texture2D" uid="uid://iybqrusjbcjf" path="res://Art/sprites/ingredients/Potato.png" id="26_p5wkl"]
-[ext_resource type="Script" uid="uid://2qph47wo3tj6" path="res://Scenes/carrot_patches.gd" id="28_0f254"]
+[ext_resource type="Script" path="res://Scenes/carrot_patches.gd" id="28_0f254"]
 [ext_resource type="Texture2D" uid="uid://di8dk1i45qwm6" path="res://Art/sprites/background/dirt_patch.png" id="29_3ua1v"]
-[ext_resource type="Script" uid="uid://beuac8l6ygt3o" path="res://Scenes/tomato_patches.gd" id="30_00yh4"]
-[ext_resource type="Script" uid="uid://cneikgil1jet3" path="res://Scenes/fish.gd" id="33_tfncv"]
+[ext_resource type="Script" path="res://Scenes/tomato_patches.gd" id="30_00yh4"]
+[ext_resource type="Script" path="res://Scenes/fish.gd" id="33_tfncv"]
 [ext_resource type="Texture2D" uid="uid://c71vsqgpnuk01" path="res://Art/sprites/ingredients/Screenshot_2025-06-15_at_4.02.51_PM-removebg-preview.png" id="34_sed06"]
-[ext_resource type="Script" uid="uid://ceihei7gccauc" path="res://Scenes/potato_patch.gd" id="36_ochwf"]
+[ext_resource type="Script" path="res://Scenes/potato_patch.gd" id="36_ochwf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sqwiw"]
 texture = ExtResource("3_dqsce")
@@ -271,8 +271,8 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ochwf"]
 _data = {
-&"RESET": SubResource("Animation_coyub"),
-&"swim_loop": SubResource("Animation_opbav")
+"RESET": SubResource("Animation_coyub"),
+"swim_loop": SubResource("Animation_opbav")
 }
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_o06y3"]
@@ -491,7 +491,7 @@ shape = SubResource("CapsuleShape2D_opbav")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Fish"]
 libraries = {
-&"": SubResource("AnimationLibrary_ochwf")
+"": SubResource("AnimationLibrary_ochwf")
 }
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
@@ -1311,10 +1311,10 @@ debug_color = Color(0.956863, 0, 0, 0.419608)
 [connection signal="body_exited" from="Carrot_patch/Patch3Zone" to="Carrot_patch" method="_on_patch_3_zone_body_exited"]
 [connection signal="body_entered" from="Tomato_patch/Tomato1Zone" to="Tomato_patch" method="_on_tomato_1_zone_body_entered"]
 [connection signal="body_exited" from="Tomato_patch/Tomato1Zone" to="Tomato_patch" method="_on_tomato_1_zone_body_exited"]
-[connection signal="body_entered" from="Tomato_patch/Tomato2Zone" to="Tomato_patch" method="_on_tomato_2_zone_body_entered"]
 [connection signal="body_entered" from="Tomato_patch/Tomato2Zone" to="Tomato_patch" method="_on_lettuce_2_zone_body_entered"]
-[connection signal="body_exited" from="Tomato_patch/Tomato2Zone" to="Tomato_patch" method="_on_tomato_2_zone_body_exited"]
+[connection signal="body_entered" from="Tomato_patch/Tomato2Zone" to="Tomato_patch" method="_on_tomato_2_zone_body_entered"]
 [connection signal="body_exited" from="Tomato_patch/Tomato2Zone" to="Tomato_patch" method="_on_lettuce_2_zone_body_exited"]
+[connection signal="body_exited" from="Tomato_patch/Tomato2Zone" to="Tomato_patch" method="_on_tomato_2_zone_body_exited"]
 [connection signal="body_entered" from="Potato_patch/Patch1Zone" to="Potato_patch" method="_on_patch_1_zone_body_entered"]
 [connection signal="body_exited" from="Potato_patch/Patch1Zone" to="Potato_patch" method="_on_patch_1_zone_body_exited"]
 [connection signal="body_entered" from="Potato_patch/Patch2Zone" to="Potato_patch" method="_on_patch_2_zone_body_entered"]
