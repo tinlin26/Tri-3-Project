@@ -1,38 +1,39 @@
-[gd_scene load_steps=92 format=4 uid="uid://bjwnmo4j3a8of"]
+[gd_scene load_steps=93 format=4 uid="uid://bjwnmo4j3a8of"]
 
 [ext_resource type="PackedScene" uid="uid://drd7ui71qystu" path="res://Scenes/player.tscn" id="1_k121w"]
-[ext_resource type="Script" path="res://Scenes/fruit_pick.gd" id="1_kn0ld"]
+[ext_resource type="Script" uid="uid://3ppqdfmdiv37" path="res://Scenes/fruit_pick.gd" id="1_kn0ld"]
 [ext_resource type="TileSet" uid="uid://btiru3ublc3mj" path="res://Tilesets/game_tile_set.tres" id="2_v3ylh"]
 [ext_resource type="Texture2D" uid="uid://dswlb3aoc7hpc" path="res://Art/sprites/background/Water.png" id="3_dqsce"]
 [ext_resource type="Texture2D" uid="uid://d4mp8l00g0kx6" path="res://Art/sprites/background/plains.png" id="3_khc4u"]
 [ext_resource type="Texture2D" uid="uid://cn78gg6lmfcem" path="res://Art/sprites/background/Basic_Grass_Biom_things.png" id="4_rx0cc"]
 [ext_resource type="Texture2D" uid="uid://fb2y4662ra8h" path="res://Art/sprites/background/New Fruit Trees-Photoroom.png" id="5_qohc7"]
 [ext_resource type="Texture2D" uid="uid://clq7hbq3840re" path="res://Art/sprites/ingredients/farm.png" id="6_0we0h"]
-[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="8_2np2s"]
+[ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="8_2np2s"]
 [ext_resource type="AudioStream" uid="uid://kog81jfmwnhj" path="res://Sound/walk-on-grass-1-291984.mp3" id="8_bvc74"]
-[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="9_b6i61"]
-[ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="10_gabrr"]
+[ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="9_b6i61"]
+[ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="10_gabrr"]
 [ext_resource type="AudioStream" uid="uid://0kuf3anl4l5c" path="res://Sound/GodotMusic.mp3" id="11_5gwaj"]
 [ext_resource type="Texture2D" uid="uid://423f6pfsayh4" path="res://Art/sprites/background/firepit_fixed.png" id="12_kn0ld"]
 [ext_resource type="Texture2D" uid="uid://dkte5qn6lkdi5" path="res://Art/sprites/background/InventoryPanel.png" id="16_hgpy0"]
-[ext_resource type="Script" path="res://Scenes/canvas_layer_inventory.gd" id="16_i4fjy"]
-[ext_resource type="Script" path="res://Scripts/InventoryPanel.gd" id="17_t2t4p"]
+[ext_resource type="Script" uid="uid://rq1nao8jrail" path="res://Scenes/canvas_layer_inventory.gd" id="16_i4fjy"]
+[ext_resource type="Script" uid="uid://c0bol44ljykpq" path="res://Scripts/InventoryPanel.gd" id="17_t2t4p"]
 [ext_resource type="Texture2D" uid="uid://df5c2hixt23j7" path="res://Art/sprites/background/Separate_Fruits_fixed.png" id="18_0pcbe"]
-[ext_resource type="Script" path="res://Scenes/apple.gd" id="19_1cojt"]
+[ext_resource type="Script" uid="uid://fk872s1mmtil" path="res://Scenes/apple.gd" id="19_1cojt"]
 [ext_resource type="Texture2D" uid="uid://6jbmdul5n2p" path="res://Art/sprites/ingredients/Carrot.png" id="20_1vso6"]
 [ext_resource type="Texture2D" uid="uid://dx0cet6l34mmk" path="res://Art/sprites/ingredients/Pie Slice.png" id="20_hmc15"]
-[ext_resource type="Script" path="res://Scenes/cooking.gd" id="20_pt3ps"]
-[ext_resource type="Script" path="res://Scenes/lemon.gd" id="21_pyn1s"]
-[ext_resource type="Script" path="res://Scenes/peach.gd" id="21_yq1aw"]
+[ext_resource type="Script" uid="uid://blasbo7t0jvkd" path="res://Scenes/cooking.gd" id="20_pt3ps"]
+[ext_resource type="Script" uid="uid://dabxkkx62ojj6" path="res://Scenes/lemon.gd" id="21_pyn1s"]
+[ext_resource type="Script" uid="uid://bdaly8q8ujdo3" path="res://Scenes/peach.gd" id="21_yq1aw"]
 [ext_resource type="Texture2D" uid="uid://b3m6wsrofjneh" path="res://Art/sprites/ingredients/Tomato.png" id="22_3ua1v"]
-[ext_resource type="Script" path="res://Scenes/strawberry.gd" id="22_xbk3s"]
-[ext_resource type="Script" path="res://Scenes/blackberry.gd" id="23_i4fjy"]
+[ext_resource type="Script" uid="uid://dn1ma5lqyibvk" path="res://Scenes/strawberry.gd" id="22_xbk3s"]
+[ext_resource type="Script" uid="uid://cx16lybowrqwu" path="res://Scenes/blackberry.gd" id="23_i4fjy"]
 [ext_resource type="Texture2D" uid="uid://djdyqykkobwes" path="res://Art/sprites/ingredients/Noodle Bowl.png" id="23_r0ikl"]
-[ext_resource type="Script" path="res://Scenes/blueberry.gd" id="24_pt3ps"]
-[ext_resource type="Script" path="res://Scenes/veggie_patches.gd" id="28_0f254"]
+[ext_resource type="Script" uid="uid://bckqpkthb3q0o" path="res://Scenes/blueberry.gd" id="24_pt3ps"]
+[ext_resource type="Texture2D" uid="uid://bxhj32iuh7rkp" path="res://Art/sprites/ingredients/fish.png" id="25_coyub"]
+[ext_resource type="Script" uid="uid://2qph47wo3tj6" path="res://Scenes/veggie_patches.gd" id="28_0f254"]
 [ext_resource type="Texture2D" uid="uid://di8dk1i45qwm6" path="res://Art/sprites/background/dirt_patch.png" id="29_3ua1v"]
-[ext_resource type="Script" path="res://Scenes/lettuce_patches.gd" id="30_00yh4"]
-[ext_resource type="Script" path="res://Scenes/fish.gd" id="33_tfncv"]
+[ext_resource type="Script" uid="uid://beuac8l6ygt3o" path="res://Scenes/lettuce_patches.gd" id="30_00yh4"]
+[ext_resource type="Script" uid="uid://cneikgil1jet3" path="res://Scenes/fish.gd" id="33_tfncv"]
 [ext_resource type="Texture2D" uid="uid://c71vsqgpnuk01" path="res://Art/sprites/ingredients/Screenshot_2025-06-15_at_4.02.51_PM-removebg-preview.png" id="34_sed06"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sqwiw"]
@@ -206,73 +207,70 @@ texture = ExtResource("12_kn0ld")
 [sub_resource type="TileSet" id="TileSet_t2t4p"]
 sources/0 = SubResource("TileSetAtlasSource_hgpy0")
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_df8o0"]
-radius = 5.62585
-height = 18.4319
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_opbav"]
+radius = 871.072
+height = 1742.14
 
-[sub_resource type="GDScript" id="GDScript_ih5hh"]
-
-[sub_resource type="Animation" id="Animation_aphx7"]
-resource_name = "swimming"
-length = 40.0
+[sub_resource type="Animation" id="Animation_opbav"]
+resource_name = "swim_loop"
+length = 7.5
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
+tracks/0/path = NodePath("Sprite2D:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 6.53333, 17.7333, 26.2333, 32.5, 40),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.5, 1, 1.5, 2.01, 2.5, 2.98, 3.5, 4, 4.51, 5, 5.52, 6.01, 6.52, 7, 7.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(705, 439), Vector2(693, 375), Vector2(596, 372), Vector2(614, 413), Vector2(644, 439), Vector2(705, 439)]
+"values": [Vector2(696.023, 374.436), Vector2(681.484, 364.737), Vector2(633.012, 356.994), Vector2(594.797, 362.835), Vector2(555.257, 379.054), Vector2(531.863, 403.976), Vector2(553.044, 415.669), Vector2(579.144, 423.288), Vector2(602.7, 395.279), Vector2(627.125, 392.529), Vector2(651.69, 412.262), Vector2(666.007, 427.737), Vector2(698.371, 425.791), Vector2(711.651, 412.429), Vector2(714.347, 392.648), Vector2(693.82, 372.158)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath(".:rotation")
+tracks/1/path = NodePath("Sprite2D:rotation")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 9.13333, 16.1333, 21.1667, 27.5667, 35.3667, 38, 40),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.5, 1, 1.5, 2.01, 2.5, 2.98, 3.5, 4, 4.51, 5, 5.52, 6.01, 6.52, 7, 7.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [1.43831, 0.758934, 0.0628958, -1.22092, -1.8641, -2.84388, -3.85518, 1.43831]
+"values": [-0.383774, -0.593945, -0.92178, -1.37184, -1.60836, -2.26252, -3.49257, -4.39008, -4.48042, -3.54956, -2.9051, -3.40478, -4.27863, -5.44447, -6.0137, -6.32078]
 }
-script = SubResource("GDScript_ih5hh")
 
-[sub_resource type="Animation" id="Animation_axkls"]
+[sub_resource type="Animation" id="Animation_coyub"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
+tracks/0/path = NodePath("Sprite2D:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(0, 0)]
+"values": [Vector2(696.023, 374.436)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath(".:rotation")
+tracks/1/path = NodePath("Sprite2D:rotation")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [0.0]
+"values": [-0.383774]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_0mm5c"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ochwf"]
 _data = {
-"RESET": SubResource("Animation_axkls"),
-"swimming": SubResource("Animation_aphx7")
+&"RESET": SubResource("Animation_coyub"),
+&"swim_loop": SubResource("Animation_opbav")
 }
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_x22tt"]
@@ -376,6 +374,10 @@ atlas = ExtResource("22_3ua1v")
 atlas = ExtResource("23_r0ikl")
 region = Rect2(1, 2, 14, 13)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_04jkj"]
+atlas = ExtResource("25_coyub")
+region = Rect2(1, 0, 15, 16)
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_i4fjy"]
 radius = 25.0799
 
@@ -465,19 +467,25 @@ scale = Vector2(1.03161, 1.03041)
 script = ExtResource("33_tfncv")
 
 [node name="Sprite2D" type="Sprite2D" parent="Fish"]
-position = Vector2(0.245857, -0.0703273)
-rotation = -1.38616
+position = Vector2(696.023, 374.436)
+rotation = -0.383774
 scale = Vector2(0.0613498, 0.0642857)
 texture = ExtResource("34_sed06")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Fish"]
-position = Vector2(0.245861, -0.0703206)
-rotation = -2.09075
-shape = SubResource("CapsuleShape2D_df8o0")
+[node name="FishArea" type="Area2D" parent="Fish/Sprite2D"]
+position = Vector2(140.549, 1593.23)
+rotation = 0.972153
+scale = Vector2(0.968149, 1.03384)
+skew = 0.0427357
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fish/Sprite2D/FishArea"]
+position = Vector2(-1450.37, -787.58)
+rotation = -0.65213
+shape = SubResource("CapsuleShape2D_opbav")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Fish"]
 libraries = {
-"": SubResource("AnimationLibrary_0mm5c")
+&"": SubResource("AnimationLibrary_ochwf")
 }
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
@@ -847,7 +855,7 @@ theme_override_font_sizes/font_size = 18
 metadata/_edit_use_anchors_ = true
 
 [node name="InventoryBoxes9" type="Sprite2D" parent="CanvasLayer/InventoryPanel"]
-position = Vector2(1.9437, 6.15789)
+position = Vector2(2.04468, 5.88421)
 scale = Vector2(0.145244, 0.447364)
 texture = SubResource("AtlasTexture_hgpy0")
 
@@ -884,6 +892,26 @@ offset_bottom = 20.96
 rotation = 0.00967493
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 22
+metadata/_edit_use_anchors_ = true
+
+[node name="InventoryBoxes11" type="Sprite2D" parent="CanvasLayer/InventoryPanel"]
+position = Vector2(9.92044, 5.8842)
+scale = Vector2(0.145244, 0.447364)
+texture = SubResource("AtlasTexture_hgpy0")
+
+[node name="Fish" type="Sprite2D" parent="CanvasLayer/InventoryPanel/InventoryBoxes11"]
+position = Vector2(-3.05176e-05, 7.62939e-06)
+scale = Vector2(1.29105, 1.22354)
+texture = SubResource("AtlasTexture_04jkj")
+
+[node name="FishCountLabel" type="Label" parent="CanvasLayer/InventoryPanel/InventoryBoxes11/Fish"]
+offset_left = -4.70139
+offset_top = -11.5404
+offset_right = 8.29861
+offset_bottom = 21.4596
+rotation = 0.00967493
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 15
 metadata/_edit_use_anchors_ = true
 
 [node name="apple" type="Node2D" parent="."]
@@ -1140,52 +1168,54 @@ scale = Vector2(1.95, 1.95)
 shape = SubResource("CircleShape2D_tpbn5")
 debug_color = Color(0.945098, 0, 0, 0.419608)
 
+[connection signal="body_entered" from="Fish/Sprite2D/FishArea" to="Fish" method="_on_fish_area_body_entered"]
+[connection signal="body_exited" from="Fish/Sprite2D/FishArea" to="Fish" method="_on_fish_area_body_exited"]
 [connection signal="body_entered" from="apple/pickable_area" to="apple" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="apple/pickable_area" to="apple" method="_on_pickable_area_body_exited"]
-[connection signal="body_entered" from="apple/pickable_area2" to="apple" method="_on_pickable_area_body_entered"]
 [connection signal="body_entered" from="apple/pickable_area2" to="apple" method="_on_pickable_area_2_body_entered"]
-[connection signal="body_exited" from="apple/pickable_area2" to="apple" method="_on_pickable_area_body_exited"]
+[connection signal="body_entered" from="apple/pickable_area2" to="apple" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="apple/pickable_area2" to="apple" method="_on_pickable_area_2_body_exited"]
-[connection signal="body_entered" from="apple/pickable_area3" to="apple" method="_on_pickable_area_body_entered"]
+[connection signal="body_exited" from="apple/pickable_area2" to="apple" method="_on_pickable_area_body_exited"]
 [connection signal="body_entered" from="apple/pickable_area3" to="apple" method="_on_pickable_area_2_body_entered"]
-[connection signal="body_exited" from="apple/pickable_area3" to="apple" method="_on_pickable_area_body_exited"]
+[connection signal="body_entered" from="apple/pickable_area3" to="apple" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="apple/pickable_area3" to="apple" method="_on_pickable_area_2_body_exited"]
+[connection signal="body_exited" from="apple/pickable_area3" to="apple" method="_on_pickable_area_body_exited"]
 [connection signal="body_entered" from="peach/pickable_area" to="peach" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="peach/pickable_area" to="peach" method="_on_pickable_area_body_exited"]
-[connection signal="body_entered" from="peach/pickable_area2" to="peach" method="_on_pickable_area_body_entered"]
 [connection signal="body_entered" from="peach/pickable_area2" to="peach" method="_on_pickable_area_2_body_entered"]
-[connection signal="body_exited" from="peach/pickable_area2" to="peach" method="_on_pickable_area_body_exited"]
+[connection signal="body_entered" from="peach/pickable_area2" to="peach" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="peach/pickable_area2" to="peach" method="_on_pickable_area_2_body_exited"]
-[connection signal="body_entered" from="peach/pickable_area3" to="peach" method="_on_pickable_area_body_entered"]
+[connection signal="body_exited" from="peach/pickable_area2" to="peach" method="_on_pickable_area_body_exited"]
 [connection signal="body_entered" from="peach/pickable_area3" to="peach" method="_on_pickable_area_2_body_entered"]
-[connection signal="body_exited" from="peach/pickable_area3" to="peach" method="_on_pickable_area_body_exited"]
+[connection signal="body_entered" from="peach/pickable_area3" to="peach" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="peach/pickable_area3" to="peach" method="_on_pickable_area_2_body_exited"]
+[connection signal="body_exited" from="peach/pickable_area3" to="peach" method="_on_pickable_area_body_exited"]
 [connection signal="body_entered" from="lemon/pickable_area" to="lemon" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="lemon/pickable_area" to="lemon" method="_on_pickable_area_body_exited"]
-[connection signal="body_entered" from="lemon/pickable_area2" to="lemon" method="_on_pickable_area_body_entered"]
 [connection signal="body_entered" from="lemon/pickable_area2" to="lemon" method="_on_pickable_area_2_body_entered"]
-[connection signal="body_exited" from="lemon/pickable_area2" to="lemon" method="_on_pickable_area_body_exited"]
+[connection signal="body_entered" from="lemon/pickable_area2" to="lemon" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="lemon/pickable_area2" to="lemon" method="_on_pickable_area_2_body_exited"]
-[connection signal="body_entered" from="lemon/pickable_area3" to="lemon" method="_on_pickable_area_body_entered"]
+[connection signal="body_exited" from="lemon/pickable_area2" to="lemon" method="_on_pickable_area_body_exited"]
 [connection signal="body_entered" from="lemon/pickable_area3" to="lemon" method="_on_pickable_area_2_body_entered"]
-[connection signal="body_exited" from="lemon/pickable_area3" to="lemon" method="_on_pickable_area_body_exited"]
+[connection signal="body_entered" from="lemon/pickable_area3" to="lemon" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="lemon/pickable_area3" to="lemon" method="_on_pickable_area_2_body_exited"]
+[connection signal="body_exited" from="lemon/pickable_area3" to="lemon" method="_on_pickable_area_body_exited"]
 [connection signal="body_entered" from="strawberry/pickable_area" to="strawberry" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="strawberry/pickable_area" to="strawberry" method="_on_pickable_area_body_exited"]
-[connection signal="body_entered" from="strawberry/pickable_area2" to="strawberry" method="_on_pickable_area_body_entered"]
 [connection signal="body_entered" from="strawberry/pickable_area2" to="strawberry" method="_on_pickable_area_2_body_entered"]
-[connection signal="body_exited" from="strawberry/pickable_area2" to="strawberry" method="_on_pickable_area_body_exited"]
+[connection signal="body_entered" from="strawberry/pickable_area2" to="strawberry" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="strawberry/pickable_area2" to="strawberry" method="_on_pickable_area_2_body_exited"]
-[connection signal="body_entered" from="strawberry/pickable_area3" to="strawberry" method="_on_pickable_area_body_entered"]
+[connection signal="body_exited" from="strawberry/pickable_area2" to="strawberry" method="_on_pickable_area_body_exited"]
 [connection signal="body_entered" from="strawberry/pickable_area3" to="strawberry" method="_on_pickable_area_2_body_entered"]
-[connection signal="body_exited" from="strawberry/pickable_area3" to="strawberry" method="_on_pickable_area_body_exited"]
+[connection signal="body_entered" from="strawberry/pickable_area3" to="strawberry" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="strawberry/pickable_area3" to="strawberry" method="_on_pickable_area_2_body_exited"]
+[connection signal="body_exited" from="strawberry/pickable_area3" to="strawberry" method="_on_pickable_area_body_exited"]
 [connection signal="body_entered" from="blackberry/pickable_area" to="blackberry" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="blackberry/pickable_area" to="blackberry" method="_on_pickable_area_body_exited"]
-[connection signal="body_entered" from="blackberry/pickable_area2" to="blackberry" method="_on_pickable_area_body_entered"]
 [connection signal="body_entered" from="blackberry/pickable_area2" to="blackberry" method="_on_pickable_area_2_body_entered"]
-[connection signal="body_exited" from="blackberry/pickable_area2" to="blackberry" method="_on_pickable_area_body_exited"]
+[connection signal="body_entered" from="blackberry/pickable_area2" to="blackberry" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="blackberry/pickable_area2" to="blackberry" method="_on_pickable_area_2_body_exited"]
+[connection signal="body_exited" from="blackberry/pickable_area2" to="blackberry" method="_on_pickable_area_body_exited"]
 [connection signal="body_entered" from="blueberry/pickable_area" to="blueberry" method="_on_pickable_area_body_entered"]
 [connection signal="body_exited" from="blueberry/pickable_area" to="blueberry" method="_on_pickable_area_body_exited"]
 [connection signal="body_entered" from="campfire/cookable_area" to="campfire" method="_on_cookable_area_body_entered"]
@@ -1198,7 +1228,7 @@ debug_color = Color(0.945098, 0, 0, 0.419608)
 [connection signal="body_exited" from="Carrot_patch/Patch3Zone" to="Carrot_patch" method="_on_patch_3_zone_body_exited"]
 [connection signal="body_entered" from="Tomato_patch/Tomato1Zone" to="Tomato_patch" method="_on_tomato_1_zone_body_entered"]
 [connection signal="body_exited" from="Tomato_patch/Tomato1Zone" to="Tomato_patch" method="_on_tomato_1_zone_body_exited"]
-[connection signal="body_entered" from="Tomato_patch/Tomato2Zone" to="Tomato_patch" method="_on_lettuce_2_zone_body_entered"]
 [connection signal="body_entered" from="Tomato_patch/Tomato2Zone" to="Tomato_patch" method="_on_tomato_2_zone_body_entered"]
-[connection signal="body_exited" from="Tomato_patch/Tomato2Zone" to="Tomato_patch" method="_on_lettuce_2_zone_body_exited"]
+[connection signal="body_entered" from="Tomato_patch/Tomato2Zone" to="Tomato_patch" method="_on_lettuce_2_zone_body_entered"]
 [connection signal="body_exited" from="Tomato_patch/Tomato2Zone" to="Tomato_patch" method="_on_tomato_2_zone_body_exited"]
+[connection signal="body_exited" from="Tomato_patch/Tomato2Zone" to="Tomato_patch" method="_on_lettuce_2_zone_body_exited"]
