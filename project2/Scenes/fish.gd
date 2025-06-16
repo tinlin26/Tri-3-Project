@@ -11,7 +11,7 @@ func _ready():
 	inventory_canvas = get_node("../CanvasLayer")
 
 func _process(_delta):
-	if player_in_area and Input.is_action_just_pressed("e"):
+	if player_in_area and Input.is_action_just_pressed("space_pick"):
 		fishCount += 1
 		print("Fish caught: " + str(fishCount))
 		

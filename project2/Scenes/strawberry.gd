@@ -9,7 +9,7 @@ func _ready():
 	inventory_canvas = get_node("../CanvasLayer")
 
 func _process(_delta):
-	if player_in_area and Input.is_action_just_pressed("e"):
+	if player_in_area and Input.is_action_just_pressed("space_pick"):
 		strawCount += 1
 		print("Strawberries picked:", strawCount)
 		

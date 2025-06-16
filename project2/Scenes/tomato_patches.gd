@@ -11,7 +11,7 @@ func _ready():
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	if player_in_area and Input.is_action_just_pressed("e"):
+	if player_in_area and Input.is_action_just_pressed("space_pick"):
 		tomatoCount += 1
 		print("Tomatoes picked:" + str(tomatoCount))
 		

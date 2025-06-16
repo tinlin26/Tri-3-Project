@@ -10,7 +10,7 @@ func _ready():
 	print("My path is: ", get_path())
 
 func _process(_delta):
-	if player_in_area and Input.is_action_just_pressed("e"):
+	if player_in_area and Input.is_action_just_pressed("space_pick"):
 		lemonCount += 1
 		print("Lemons picked:" + str(lemonCount))
 		

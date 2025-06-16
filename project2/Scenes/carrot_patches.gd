@@ -9,7 +9,7 @@ func _ready():
 	
 	
 func _process(_delta):
-	if player_in_area and Input.is_action_just_pressed("e"):
+	if player_in_area and Input.is_action_just_pressed("space_pick"):
 		carrotCount += 1
 		print("Carrots picked:" + str(carrotCount))
 		
