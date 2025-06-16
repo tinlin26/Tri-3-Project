@@ -1,4 +1,4 @@
-[gd_scene load_steps=93 format=4 uid="uid://bjwnmo4j3a8of"]
+[gd_scene load_steps=96 format=4 uid="uid://bjwnmo4j3a8of"]
 
 [ext_resource type="PackedScene" uid="uid://drd7ui71qystu" path="res://Scenes/player.tscn" id="1_k121w"]
 [ext_resource type="Script" uid="uid://3ppqdfmdiv37" path="res://Scenes/fruit_pick.gd" id="1_kn0ld"]
@@ -30,11 +30,13 @@
 [ext_resource type="Texture2D" uid="uid://djdyqykkobwes" path="res://Art/sprites/ingredients/Noodle Bowl.png" id="23_r0ikl"]
 [ext_resource type="Script" uid="uid://bckqpkthb3q0o" path="res://Scenes/blueberry.gd" id="24_pt3ps"]
 [ext_resource type="Texture2D" uid="uid://bxhj32iuh7rkp" path="res://Art/sprites/ingredients/fish.png" id="25_coyub"]
-[ext_resource type="Script" uid="uid://2qph47wo3tj6" path="res://Scenes/veggie_patches.gd" id="28_0f254"]
+[ext_resource type="Texture2D" uid="uid://iybqrusjbcjf" path="res://Art/sprites/ingredients/Potato.png" id="26_p5wkl"]
+[ext_resource type="Script" uid="uid://2qph47wo3tj6" path="res://Scenes/carrot_patches.gd" id="28_0f254"]
 [ext_resource type="Texture2D" uid="uid://di8dk1i45qwm6" path="res://Art/sprites/background/dirt_patch.png" id="29_3ua1v"]
-[ext_resource type="Script" uid="uid://beuac8l6ygt3o" path="res://Scenes/lettuce_patches.gd" id="30_00yh4"]
+[ext_resource type="Script" uid="uid://beuac8l6ygt3o" path="res://Scenes/tomato_patches.gd" id="30_00yh4"]
 [ext_resource type="Script" uid="uid://cneikgil1jet3" path="res://Scenes/fish.gd" id="33_tfncv"]
 [ext_resource type="Texture2D" uid="uid://c71vsqgpnuk01" path="res://Art/sprites/ingredients/Screenshot_2025-06-15_at_4.02.51_PM-removebg-preview.png" id="34_sed06"]
+[ext_resource type="Script" uid="uid://ceihei7gccauc" path="res://Scenes/potato_patch.gd" id="36_ochwf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sqwiw"]
 texture = ExtResource("3_dqsce")
@@ -208,8 +210,35 @@ texture = ExtResource("12_kn0ld")
 sources/0 = SubResource("TileSetAtlasSource_hgpy0")
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_opbav"]
-radius = 871.072
+radius = 871.07
 height = 1742.14
+
+[sub_resource type="Animation" id="Animation_coyub"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(696.023, 374.436)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.383774]
+}
 
 [sub_resource type="Animation" id="Animation_opbav"]
 resource_name = "swim_loop"
@@ -240,40 +269,11 @@ tracks/1/keys = {
 "values": [-0.383774, -0.593945, -0.92178, -1.37184, -1.60836, -2.26252, -3.49257, -4.39008, -4.48042, -3.54956, -2.9051, -3.40478, -4.27863, -5.44447, -6.0137, -6.32078]
 }
 
-[sub_resource type="Animation" id="Animation_coyub"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(696.023, 374.436)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Sprite2D:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [-0.383774]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ochwf"]
 _data = {
 &"RESET": SubResource("Animation_coyub"),
 &"swim_loop": SubResource("Animation_opbav")
 }
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_x22tt"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_o06y3"]
 radius = 13.0
@@ -313,6 +313,8 @@ size = Vector2(34, 15)
 size = Vector2(37, 15)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ys1us"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_x22tt"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2d5s1"]
 
@@ -377,6 +379,10 @@ region = Rect2(1, 2, 14, 13)
 [sub_resource type="AtlasTexture" id="AtlasTexture_04jkj"]
 atlas = ExtResource("25_coyub")
 region = Rect2(1, 0, 15, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lkcvt"]
+atlas = ExtResource("26_p5wkl")
+region = Rect2(1, 2, 13, 13)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_i4fjy"]
 radius = 25.0799
@@ -490,12 +496,6 @@ libraries = {
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(66, 167)
-
-[node name="CollisionShape2D27" type="CollisionShape2D" parent="StaticBody2D"]
-z_index = 1
-position = Vector2(1094.46, 225.882)
-scale = Vector2(2.3716, 2.3716)
-shape = SubResource("CircleShape2D_x22tt")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
 z_index = 3
@@ -630,7 +630,7 @@ shape = SubResource("CircleShape2D_x22tt")
 
 [node name="CollisionShape2D20" type="CollisionShape2D" parent="StaticBody2D"]
 z_index = 1
-position = Vector2(605, 36)
+position = Vector2(620, 71)
 scale = Vector2(1.43, 1.43)
 shape = SubResource("CircleShape2D_x22tt")
 
@@ -648,7 +648,25 @@ shape = SubResource("CircleShape2D_2d5s1")
 
 [node name="CollisionShape2D29" type="CollisionShape2D" parent="StaticBody2D"]
 z_index = 1
-position = Vector2(502, 44)
+position = Vector2(531, 56)
+scale = Vector2(1.07, 1.07)
+shape = SubResource("CircleShape2D_y6ddf")
+
+[node name="CollisionShape2D30" type="CollisionShape2D" parent="StaticBody2D"]
+z_index = 1
+position = Vector2(455, -99)
+scale = Vector2(1.54, 1.54)
+shape = SubResource("CircleShape2D_x22tt")
+
+[node name="CollisionShape2D31" type="CollisionShape2D" parent="StaticBody2D"]
+z_index = 1
+position = Vector2(631.04, -38.84)
+scale = Vector2(1.53, 1.53)
+shape = SubResource("CircleShape2D_2d5s1")
+
+[node name="CollisionShape2D32" type="CollisionShape2D" parent="StaticBody2D"]
+z_index = 1
+position = Vector2(458, 7)
 scale = Vector2(1.07, 1.07)
 shape = SubResource("CircleShape2D_y6ddf")
 
@@ -914,6 +932,26 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 15
 metadata/_edit_use_anchors_ = true
 
+[node name="InventoryBoxes12" type="Sprite2D" parent="CanvasLayer/InventoryPanel"]
+position = Vector2(5.98257, 5.8842)
+scale = Vector2(0.145244, 0.447364)
+texture = SubResource("AtlasTexture_hgpy0")
+
+[node name="Potato" type="Sprite2D" parent="CanvasLayer/InventoryPanel/InventoryBoxes12"]
+position = Vector2(0.347252, 0.305892)
+scale = Vector2(1.44384, 1.36472)
+texture = SubResource("AtlasTexture_lkcvt")
+
+[node name="PotatoCountLabel" type="Label" parent="CanvasLayer/InventoryPanel/InventoryBoxes12/Potato"]
+offset_left = -2.77741
+offset_top = -8.85201
+offset_right = 10.2226
+offset_bottom = 24.148
+rotation = 0.00967493
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+metadata/_edit_use_anchors_ = true
+
 [node name="apple" type="Node2D" parent="."]
 script = ExtResource("19_1cojt")
 
@@ -1106,7 +1144,7 @@ scale = Vector2(1.6875, 1.625)
 texture = SubResource("AtlasTexture_r0ikl")
 
 [node name="Carrot2" type="Sprite2D" parent="Carrot_patch"]
-position = Vector2(671, 204)
+position = Vector2(686, 239)
 scale = Vector2(1.4375, 1.4375)
 texture = SubResource("AtlasTexture_1vso6")
 
@@ -1126,7 +1164,7 @@ debug_color = Color(0.956863, 0, 0, 0.419608)
 [node name="Patch2Zone" type="Area2D" parent="Carrot_patch"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Carrot_patch/Patch2Zone"]
-position = Vector2(671, 203)
+position = Vector2(685, 238)
 scale = Vector2(2.64, 2.64)
 shape = SubResource("CircleShape2D_qk33o")
 debug_color = Color(0.956863, 0, 0, 0.419608)
@@ -1143,7 +1181,7 @@ debug_color = Color(0.956863, 0, 0, 0.419608)
 script = ExtResource("30_00yh4")
 
 [node name="Tomato1" type="Sprite2D" parent="Tomato_patch"]
-position = Vector2(568, 211)
+position = Vector2(597, 223)
 scale = Vector2(1.05556, 1.25)
 texture = SubResource("AtlasTexture_coyub")
 
@@ -1163,10 +1201,55 @@ debug_color = Color(0.976471, 0, 0, 0.419608)
 [node name="Tomato2Zone" type="Area2D" parent="Tomato_patch"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tomato_patch/Tomato2Zone"]
-position = Vector2(568, 211)
+position = Vector2(597, 224)
 scale = Vector2(1.95, 1.95)
 shape = SubResource("CircleShape2D_tpbn5")
 debug_color = Color(0.945098, 0, 0, 0.419608)
+
+[node name="Potato_patch" type="Node2D" parent="."]
+script = ExtResource("36_ochwf")
+
+[node name="Potato1" type="Sprite2D" parent="Potato_patch"]
+position = Vector2(520, 69)
+scale = Vector2(1.6875, 1.625)
+texture = SubResource("AtlasTexture_r0ikl")
+
+[node name="Potato2" type="Sprite2D" parent="Potato_patch"]
+position = Vector2(524, 174)
+scale = Vector2(1.4375, 1.4375)
+texture = SubResource("AtlasTexture_1vso6")
+
+[node name="Potato3" type="Sprite2D" parent="Potato_patch"]
+position = Vector2(698, 128)
+scale = Vector2(1.5625, 1.5625)
+texture = SubResource("AtlasTexture_3ua1v")
+
+[node name="Patch1Zone" type="Area2D" parent="Potato_patch"]
+position = Vector2(76, -51)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Potato_patch/Patch1Zone"]
+position = Vector2(444, 119)
+scale = Vector2(2.64, 2.64)
+shape = SubResource("CircleShape2D_qk33o")
+debug_color = Color(0.956863, 0, 0, 0.419608)
+
+[node name="Patch2Zone" type="Area2D" parent="Potato_patch"]
+position = Vector2(-147, -29)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Potato_patch/Patch2Zone"]
+position = Vector2(671, 203)
+scale = Vector2(2.64, 2.64)
+shape = SubResource("CircleShape2D_qk33o")
+debug_color = Color(0.956863, 0, 0, 0.419608)
+
+[node name="Patch3Zone" type="Area2D" parent="Potato_patch"]
+position = Vector2(122, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Potato_patch/Patch3Zone"]
+position = Vector2(574, 128)
+scale = Vector2(2.64, 2.64)
+shape = SubResource("CircleShape2D_qk33o")
+debug_color = Color(0.956863, 0, 0, 0.419608)
 
 [connection signal="body_entered" from="Fish/Sprite2D/FishArea" to="Fish" method="_on_fish_area_body_entered"]
 [connection signal="body_exited" from="Fish/Sprite2D/FishArea" to="Fish" method="_on_fish_area_body_exited"]
@@ -1232,3 +1315,9 @@ debug_color = Color(0.945098, 0, 0, 0.419608)
 [connection signal="body_entered" from="Tomato_patch/Tomato2Zone" to="Tomato_patch" method="_on_lettuce_2_zone_body_entered"]
 [connection signal="body_exited" from="Tomato_patch/Tomato2Zone" to="Tomato_patch" method="_on_tomato_2_zone_body_exited"]
 [connection signal="body_exited" from="Tomato_patch/Tomato2Zone" to="Tomato_patch" method="_on_lettuce_2_zone_body_exited"]
+[connection signal="body_entered" from="Potato_patch/Patch1Zone" to="Potato_patch" method="_on_patch_1_zone_body_entered"]
+[connection signal="body_exited" from="Potato_patch/Patch1Zone" to="Potato_patch" method="_on_patch_1_zone_body_exited"]
+[connection signal="body_entered" from="Potato_patch/Patch2Zone" to="Potato_patch" method="_on_patch_2_zone_body_entered"]
+[connection signal="body_exited" from="Potato_patch/Patch2Zone" to="Potato_patch" method="_on_patch_2_zone_body_exited"]
+[connection signal="body_entered" from="Potato_patch/Patch3Zone" to="Potato_patch" method="_on_patch_3_zone_body_entered"]
+[connection signal="body_exited" from="Potato_patch/Patch3Zone" to="Potato_patch" method="_on_patch_3_zone_body_exited"]

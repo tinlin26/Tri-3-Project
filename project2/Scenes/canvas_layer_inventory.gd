@@ -11,6 +11,7 @@ extends CanvasLayer
 @onready var tomato_label = $InventoryPanel/InventoryBoxes9/Tomato/TomatoCountLabel
 @onready var noodles_label = $InventoryPanel/InventoryBoxes10/Noodles/NoodlesCountLabel
 @onready var fish_label = $InventoryPanel/InventoryBoxes11/Fish/FishCountLabel
+@onready var potato_label = $InventoryPanel/InventoryBoxes12/Potato/PotatoCountLabel
 
 var strawberry_count = 0
 var apple_count = 0
@@ -23,6 +24,7 @@ var carrot_count = 0
 var tomato_count = 0
 var noodles_count = 0
 var fish_count = 0
+var potato_count = 0
 
 func _ready():
 	print("InventoryCanvas is ready.")
@@ -70,3 +72,7 @@ func update_noodles_count(new_count: int):
 func update_fish_count(new_count: int):
 	fish_count = new_count
 	fish_label.text = str(fish_count)
+
+func update_potato_count(new_count: int):
+	potato_count = new_count
+	potato_label.text = str(potato_count)
