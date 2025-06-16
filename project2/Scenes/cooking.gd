@@ -11,6 +11,7 @@ var tomato_tracker
 var carrot_tracker
 var noodlesCount = 0
 var player_in_area = false
+var menu_shown = false
 
 #Ingredients for each Recipe 
 const LEMONS_REQUIRED = 2
@@ -63,6 +64,15 @@ func _process(delta):
 		keys_pressed.append(KEY_T)
 	if Input.is_key_pressed(KEY_C) and KEY_C not in keys_pressed:
 		keys_pressed.append(KEY_C)
+	if Input.is_key_pressed(KEY_M) and KEY_M not in keys_pressed:
+		keys_pressed.append(KEY_M)
+
+	if player_in_area and KEY_M in keys_pressed and not menu_shown:
+		menu_shown = true
+		$"../Menuscreen".show()
+	elif player_in_area and KEY_M in keys_pressed and menu_shown:
+		menu_shown = false
+		$"../Menuscreen".hide()
 
 	# Craft pie
 	if player_in_area and KEY_P in keys_pressed and KEY_L in keys_pressed and not crafted:
@@ -81,7 +91,7 @@ func _process(delta):
 		crafted = true
 
 	# Remove released keys
-	for key in [KEY_P, KEY_L, KEY_T, KEY_C]:
+	for key in [KEY_P, KEY_L, KEY_T, KEY_C, KEY_M]:
 		if not Input.is_key_pressed(key):
 			keys_pressed.erase(key)
 
