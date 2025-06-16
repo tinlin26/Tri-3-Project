@@ -1,6 +1,6 @@
 extends AnimatableBody2D
 
-@export var swim_speed := 0.5
+@export var swim_speed := 3
 var player_in_area = false
 var fishCount = 0
 var inventory_canvas: Node = null

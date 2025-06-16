@@ -214,8 +214,8 @@ texture = ExtResource("12_kn0ld")
 sources/0 = SubResource("TileSetAtlasSource_hgpy0")
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_opbav"]
-radius = 442.596
-height = 890.096
+radius = 367.382
+height = 734.764
 
 [sub_resource type="Animation" id="Animation_coyub"]
 length = 0.001
