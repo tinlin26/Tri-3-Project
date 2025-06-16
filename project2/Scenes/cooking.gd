@@ -64,13 +64,11 @@ func _process(delta):
 		keys_pressed.append(KEY_T)
 	if Input.is_key_pressed(KEY_C) and KEY_C not in keys_pressed:
 		keys_pressed.append(KEY_C)
-	if Input.is_key_pressed(KEY_M) and KEY_M not in keys_pressed:
-		keys_pressed.append(KEY_M)
 
-	if player_in_area and KEY_M in keys_pressed and not menu_shown:
+	if player_in_area and Input.is_action_just_pressed("M") and not menu_shown:
 		menu_shown = true
 		$"../Menuscreen".show()
-	elif player_in_area and KEY_M in keys_pressed and menu_shown:
+	elif player_in_area and Input.is_action_just_pressed("M") and menu_shown:
 		menu_shown = false
 		$"../Menuscreen".hide()
 
